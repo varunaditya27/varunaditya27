@@ -1,5 +1,3 @@
-![Cyberpunk Banner](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZvcGVzazV0ZDJsa3FrbWNlZnZubmxrbTUzMm5zYzA3NGM1YWl6aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4pAQv9o3C4qew0OsE/giphy.gif)
-
 # 👾 QuantumCipherX
 ### *Exploring tech, one project at a time.*
 
@@ -22,7 +20,6 @@ Hey there 👋 I'm Varun — an Information Science Engineering student @ RVCE. 
 ---
 
 ## 🚀 Currently Building
-- 🧠 A personalized AI assistant for JEE/NEET prep
 - 📚 A research paper guidance tool (with IEEE paper comparison + plagiarism detection)
 - 📅 TaskTrack – A MERN app for seamless student task management
 - 📱 A client project with a German company (mobile app dev)
@@ -49,9 +46,5 @@ Hey there 👋 I'm Varun — an Information Science Engineering student @ RVCE. 
 ```
 
 ---
-
-<div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG5idXZ3ZTR2YXZzY3lvMGI4MXM2dXVyaTh1ZHZnYnlxZ2xnaHYxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dU1B3XnN2RDdwWZXYd/giphy.gif" width="80"/>
-</div>
 
 > Profile powered by curiosity, late-night debugging, and a little bit of caffeine ☕
