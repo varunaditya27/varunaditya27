@@ -31,8 +31,8 @@ Hey there 👋 I'm Varun — an Information Science Engineering student @ RVCE. 
 
 ## 📊 GitHub Stats
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=QuantumCipherX&show_icons=true&theme=radical" width="48%"/>
-  <img src="https://streak-stats.demolab.com?user=QuantumCipherX&theme=radical" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=varunaditya27&show_icons=true&theme=radical" width="48%"/>
+  <img src="https://streak-stats.demolab.com?user=varunaditya27&theme=radical" width="48%"/>
 </p>
 
 ---
