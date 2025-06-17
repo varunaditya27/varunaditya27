@@ -22,12 +22,12 @@
       </td>
       <td align="center" width="33%">
         <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="80">
-        <br><strong>📱 TaskTrack MERN</strong>
+        <br><strong>📱TaskTrack MERN</strong>
         <br><sub>Student productivity revolution</sub>
       </td>
       <td align="center" width="33%">
         <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="80">
-        <br><strong>🌍 German Client Project</strong>
+        <br><strong>🌍German Client Project</strong>
         <br><sub>Mobile app development</sub>
       </td>
     </tr>
