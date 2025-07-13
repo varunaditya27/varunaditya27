@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&width=900&height=150&lines=⚡+VARUN+ADITYA+⚡;🔮+DIGITAL+ARCHITECT+•+AI+VISIONARY+🔮;💎+CRAFTING+TOMORROW'S+INTELLIGENCE+💎;🌟+RVCE+BANGALORE+•+ENGINEER+EXTRAORDINAIRE+🌟" alt="Dynamic Introduction"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&width=900&height=150&lines=⚡+VARUN+ADITYA+⚡;🔮+DIGITAL+ARCHITECT+•+AI+VISIONARY+🔮;💎+CRAFTING+TOMORROW'S+INTELLIGENCE+💎;🌟+RVCE+BANGALORE+•+ENGINEER+EXTRAORDINAIRE+🌟" alt="Dynamic Introduction"/>
 </div>
 
 <div align="center">
@@ -43,7 +43,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=600&height=40&lines=🚀+THE+DIGITAL+ARCHITECT+MANIFESTO+🚀" alt="Manifesto"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=600&height=40&lines=🚀+THE+DIGITAL+ARCHITECT+MANIFESTO+🚀" alt="Manifesto"/>
 </div>
 
 <br>
@@ -75,7 +75,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FF6B6B&center=true&vCenter=true&width=600&height=40&lines=💎+MASTER+TECH+ARSENAL+💎" alt="Tech Arsenal"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FF6B6B&center=true&vCenter=true&width=600&height=40&lines=💎+MASTER+TECH+ARSENAL+💎" alt="Tech Arsenal"/>
 </div>
 
 <br>
@@ -115,7 +115,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=600&height=40&lines=🌟+SIGNATURE+PROJECTS+🌟" alt="Projects"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=600&height=40&lines=🌟+SIGNATURE+PROJECTS+🌟" alt="Projects"/>
 </div>
 
 <br>
@@ -154,7 +154,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=600&height=40&lines=💫+PHILOSOPHY+%26+VISION+💫" alt="Philosophy"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=600&height=40&lines=💫+PHILOSOPHY+%26+VISION+💫" alt="Philosophy"/>
 </div>
 
 <br>
@@ -186,7 +186,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FF6B6B&center=true&vCenter=true&width=600&height=40&lines=🌐+DIGITAL+CONNECTIONS+🌐" alt="Connections"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=FF6B6B&center=true&vCenter=true&width=600&height=40&lines=🌐+DIGITAL+CONNECTIONS+🌐" alt="Connections"/>
 </div>
 
 <br>
@@ -231,7 +231,7 @@
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=600&height=40&lines=🎮+DEVELOPER+SECRETS+🎮" alt="Secrets"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=600&height=40&lines=🎮+DEVELOPER+SECRETS+🎮" alt="Secrets"/>
 </div>
 
 <br>
@@ -269,7 +269,7 @@
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=700&height=40&lines=You're+not+just+visiting+a+profile...;You're+witnessing+a+digital+mastermind+in+action! 🚀✨" alt="Secret Message"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=16&duration=2000&pause=500&color=00D4FF&center=true&vCenter=true&width=700&height=40&lines=You're+not+just+visiting+a+profile...;You're+witnessing+a+digital+mastermind+in+action! 🚀✨" alt="Secret Message"/>
 </div>
 
 </details>
@@ -296,7 +296,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&height=30&lines=💫+UNTIL+NEXT+TIME,+KEEP+CODING+THE+FUTURE+💫" alt="Final Message"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=14&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&height=30&lines=💫+UNTIL+NEXT+TIME,+KEEP+CODING+THE+FUTURE+💫" alt="Final Message"/>
 </div>
 
 <!-- QuantumCipherX PROFILE README.md END -->
