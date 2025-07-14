@@ -1,7 +1,7 @@
 <!-- QuantumCipherX PROFILE README.md START -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=250&section=header&text=QUANTUMCIPHERX&fontSize=60&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=🚀%20Where%20Code%20Becomes%20Art🚀&descAlignY=55&descAlign=50&descSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=250&section=header&text=QuantumCipherX&fontSize=60&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=🚀%20Where%20Code%20Becomes%20Art🚀&descAlignY=55&descAlign=50&descSize=18"/>
 </div>
 
 <div align="center">
