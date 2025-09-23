@@ -1,4 +1,3 @@
-<!-- QuantumCipherX PROFILE README.md START -->
 <div align="center">
 
 <!-- 3D Gradient Name -->
