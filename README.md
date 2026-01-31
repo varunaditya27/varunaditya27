@@ -1,200 +1,485 @@
 <div align="center">
-  
-  <!-- Animated Wave -->
-  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=250&section=header&text=Varun%20Aditya&fontSize=90&fontAlignY=35&desc=Architecting%20Intelligence%20•%20Engineering%20Tomorrow&descAlignY=55&animation=twinkling)
-  
-  <!-- Dynamic Typing Effect -->
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Information+Science+Engineering+%40+RVCE+Bangalore;Full-Stack+Architect+%7C+AI%2FML+Pioneer+%7C+Quantum+Enthusiast;Building+Intelligent+Systems+That+Matter)](https://git.io/typing-svg)
-  
-  <!-- Visitor Badge & Social Links -->
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=varunaditya27&style=for-the-badge&color=0891b2&labelColor=1c1f23" alt="Profile Views">
-    <a href="https://varun-aditya-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white"></a>
-    <a href="https://linkedin.com/in/varunaditya27"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-    <a href="mailto:varunaditya.is24@rvce.edu.in"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  </p>
+
+<!-- Neural Network Particle Header -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=VARUN%20ADITYA&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Architecting%20Intelligent%20Systems%20%E2%80%A2%20Pushing%20Boundaries%20of%20AI&descAlignY=60&descSize=18"/>
+
+<!-- Dynamic Multi-line Typing Animation -->
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Information+Science+Engineer+%40+RVCE;Full-Stack+Architect+%7C+AI%2FML+Researcher;Building+Intelligent+Systems+That+Scale" alt="Typing SVG" /></a>
+
+<!-- Sleek Social Badges -->
+<p align="center">
+  <a href="https://varun-aditya-portfolio.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-00D9FF?style=for-the-badge&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/varunaditya27">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:varun.paparajugari@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=varunaditya27&style=for-the-badge&color=00D9FF&label=Profile+Views"/>
+</p>
+
+<!-- Neural Network Divider -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 </div>
 
-<!-- About Section with Gradient Border -->
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
-</div>
+<br>
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30"> About Me
+<!-- About Section with Code Block Aesthetic -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Brain.png" width="35" /> Neural Profile
 
-```python
-class VarunAditya:
-    def __init__(self):
-        self.identity = {
-            "role": "ISE Undergraduate @ RVCE Bangalore",
-            "cgpa": 9.93,
-            "focus": ["AI/ML Systems", "Quantum Computing", "Edge Intelligence"]
-        }
-        self.philosophy = "Transform complex problems into elegant solutions"
-        self.current_endeavors = {
-            "research": "Quantum-Classical Hybrid Algorithms",
-            "building": "Context-Aware AI Architectures",
-            "learning": "Advanced System Design Patterns"
-        }
-        
-    def get_impact(self):
-        return "90+ participants engaged through AI workshops & events"
+```typescript
+interface Developer {
+  identity: {
+    name: string;
+    location: string;
+    institution: string;
+    cgpa: number;
+  };
+  expertise: string[];
+  research: string[];
+  philosophy: string;
+}
+
+const varunAditya: Developer = {
+  identity: {
+    name: "Varun Aditya (QuantumCipherX)",
+    location: "Bangalore, India 🇮🇳",
+    institution: "R.V. College of Engineering",
+    cgpa: 9.93
+  },
+  expertise: [
+    "Full-Stack Development",
+    "AI/ML Systems Architecture", 
+    "Quantum Computing",
+    "Edge Intelligence",
+    "Blockchain Development"
+  ],
+  research: [
+    "Quantum-Classical Hybrid Algorithms",
+    "Context-Aware AI Systems",
+    "LLM Hallucination Mitigation",
+    "Federated Learning"
+  ],
+  philosophy: "Transforming complex problems into elegant, scalable solutions"
+};
+
+export default varunAditya;
 ```
 
-<!-- Tech Stack Section with Custom Icons -->
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> Tech Arsenal
+<div align="right">
 
-<details open>
-<summary><b>🎯 Core Technologies</b></summary>
+**🎯 Impact:** `90+ participants engaged` • **📚 Learning:** `Continuous` • **🚀 Projects:** `33+ repositories`
+
+</div>
+
 <br>
 
-<table align="center">
-<tr>
-<td align="center" width="96">
-<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-<br>Python
-</td>
-<td align="center" width="96">
-<img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-<br>JavaScript
-</td>
-<td align="center" width="96">
-<img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
-<br>TypeScript
-</td>
-<td align="center" width="96">
-<img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-<br>React
-</td>
-<td align="center" width="96">
-<img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" alt="Next.js" />
-<br>Next.js
-</td>
-</tr>
-<tr>
-<td align="center" width="96">
-<img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
-<br>FastAPI
-</td>
-<td align="center" width="96">
-<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-<br>Docker
-</td>
-<td align="center" width="96">
-<img src="https://skillicons.dev/icons?i=firebase" width="65" height="65" alt="Firebase" />
-<br>Firebase
-</td>
-<td align="center" width="96">
-<img src="https://skillicons.dev/icons?i=tensorflow" width="65" height="65" alt="TensorFlow" />
-<br>TensorFlow
-</td>
-<td align="center" width="96">
-<img src="https://skillicons.dev/icons?i=arduino" width="65" height="65" alt="Arduino" />
-<br>IoT/Edge
-</td>
-</tr>
-</table>
+<!-- Tech Stack Section -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" width="35" /> Technology Arsenal
 
-</details>
+<div align="center">
 
-<details>
-<summary><b>🔧 Complete Stack</b></summary>
-<br>
-
-![Languages](https://skillicons.dev/icons?i=python,js,ts,c,cpp&theme=dark)
-![Frontend](https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind&theme=dark)
-![Backend](https://skillicons.dev/icons?i=nodejs,express,fastapi,flask&theme=dark)
-![Database](https://skillicons.dev/icons?i=firebase,supabase,postgres,mongodb&theme=dark)
-![Tools](https://skillicons.dev/icons?i=git,docker,vercel,vscode,postman&theme=dark)
-
-</details>
-
-<!-- Featured Projects with Enhanced Cards -->
-## <img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"> Flagship Projects
+### Core Stack
 
 <table>
 <tr>
-<td width="50%">
-
-### 🧠 [LearnMate AI](https://github.com/varunaditya27/LearnMateAI)
-<img src="https://img.shields.io/badge/Next.js%2015-black?style=flat-square&logo=next.js" alt="Next.js">
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-<img src="https://img.shields.io/badge/Gemini%20AI-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
-
-**Production-grade AI learning companion** transforming self-education into an addictive experience
-- 📊 **Real-time engagement analytics** tracking focus quality & learning patterns
-- 🎮 **Gamification engine** with streaks, leaderboards & achievement systems
-- 🤝 **AI-powered study buddy matching** based on learning style & timezone
-- 🎯 **28+ RESTful endpoints** with type-safe contracts & JWT authentication
-
+<td align="center" width="110" height="110">
+<img src="https://techstack-generator.vercel.app/python-icon.svg" width="60" height="60" />
+<br><strong>Python</strong>
 </td>
-<td width="50%">
-
-### ⚡ [MindForge](https://github.com/varunaditya27/MindForge)
-<img src="https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi" alt="FastAPI">
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase">
-
-**AI-powered idea evaluation platform** for innovation challenges
-- 🔥 **5-dimensional rubric scoring** with Gemini 2.5 Flash integration
-- ⚡ **Queue-based architecture** handling burst submissions elegantly
-- 📈 **Multi-key load balancing** for high-throughput AI processing
-- 🏆 **Real-time leaderboard** with privacy-first data architecture
-
+<td align="center" width="110" height="110">
+<img src="https://techstack-generator.vercel.app/ts-icon.svg" width="60" height="60" />
+<br><strong>TypeScript</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://techstack-generator.vercel.app/js-icon.svg" width="60" height="60" />
+<br><strong>JavaScript</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://techstack-generator.vercel.app/react-icon.svg" width="60" height="60" />
+<br><strong>React</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="60" height="60" />
+<br><strong>Next.js</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="60" height="60" />
+<br><strong>FastAPI</strong>
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="60" height="60" />
+<br><strong>TensorFlow</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="60" height="60" />
+<br><strong>PyTorch</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" width="60" height="60" />
+<br><strong>Docker</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=firebase&theme=dark" width="60" height="60" />
+<br><strong>Firebase</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="60" height="60" />
+<br><strong>PostgreSQL</strong>
+</td>
+<td align="center" width="110" height="110">
+<img src="https://skillicons.dev/icons?i=solidity&theme=dark" width="60" height="60" />
+<br><strong>Solidity</strong>
+</td>
+</tr>
+</table>
 
-### 🌱 [EcoDose](https://github.com/varunaditya27/EcoDose)
-<img src="https://img.shields.io/badge/ML-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="ML">
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32">
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
+<details>
+<summary><kbd>🔧 View Complete Tech Stack</kbd></summary>
+<br>
 
-**Smart biofertilizer recommendation system** achieving 90% accuracy
-- 🤖 **Random Forest & Linear Regression** models for precise dosage
-- 📡 **ESP32 firmware** for real-time soil data acquisition
-- 💬 **Conversational AI assistant** providing contextual agri-guidance
-- 🎯 **End-to-end IoT pipeline** from sensors to cloud analytics
+**Languages**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+
+**Frontend**  
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+
+**Backend**  
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+
+**AI/ML**  
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+**Database**  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+
+**Blockchain**  
+![Cardano](https://img.shields.io/badge/Cardano-0033AD?style=flat-square&logo=cardano&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
+
+**Tools & DevOps**  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+**IoT/Edge**  
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
+
+</details>
+
+</div>
+
+<br>
+
+<!-- Flagship Projects Section -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" /> Flagship Projects
+
+<div align="center">
+
+<!-- Project 1 -->
+<details open>
+<summary><h3>🧠 LearnMate AI - AI-Powered Learning Companion</h3></summary>
+
+<div align="left">
+
+[![Next.js](https://img.shields.io/badge/Next.js_15-black?style=flat-square&logo=next.js)](https://github.com/varunaditya27/LearnMateAI)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://github.com/varunaditya27/LearnMateAI)
+[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/varunaditya27/LearnMateAI)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://github.com/varunaditya27/LearnMateAI)
+
+**Production-grade AI learning companion transforming self-education into an engaging experience**
+
+#### 🎯 Key Features
+- **📊 Real-time Engagement Analytics** - Track focus quality, learning patterns & cognitive load
+- **🎮 Gamification Engine** - Streaks, leaderboards, achievement systems with dopamine-driven rewards
+- **🤝 AI Study Buddy Matching** - Smart pairing based on learning style, goals & timezone
+- **🔒 Enterprise-grade Auth** - JWT-based authentication with role-based access control
+- **⚡ 28+ RESTful Endpoints** - Type-safe API contracts with comprehensive error handling
+- **🎨 Responsive UI** - Seamless experience across desktop, tablet & mobile
+
+#### 💡 Technical Highlights
+- Advanced state management with Redux Toolkit & React Query
+- Server-side rendering (SSR) for optimal SEO & performance
+- Real-time data synchronization using Firebase Realtime Database
+- Gemini AI integration for personalized learning recommendations
+
+[**→ View Repository**](https://github.com/varunaditya27/LearnMateAI)
+
+</div>
+</details>
+
+<!-- Project 2 -->
+<details>
+<summary><h3>⚡ MindForge - AI Idea Evaluation Platform</h3></summary>
+
+<div align="left">
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)](https://github.com/varunaditya27/MindForge)
+[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://github.com/varunaditya27/MindForge)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://github.com/varunaditya27/MindForge)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/varunaditya27/MindForge)
+
+**AI-powered platform for evaluating innovation challenge submissions at scale**
+
+#### 🎯 Key Features
+- **🔥 5-Dimensional Rubric Scoring** - Comprehensive evaluation across innovation, feasibility, impact, presentation & technical merit
+- **⚡ Queue-Based Architecture** - Gracefully handles burst submissions with async processing
+- **📈 Multi-Key Load Balancing** - Intelligent API key rotation for high-throughput AI processing
+- **🏆 Real-time Leaderboard** - Privacy-first ranking system with anonymous public display
+- **🎨 Modern React UI** - Intuitive submission interface with real-time status updates
+
+#### 💡 Technical Highlights
+- Asynchronous task processing with Python's asyncio
+- Firestore integration for scalable data storage
+- Rate limiting & exponential backoff for API resilience
+- RESTful API design with comprehensive documentation
+
+[**→ View Repository**](https://github.com/varunaditya27/MindForge)
+
+</div>
+</details>
+
+<!-- Project 3 -->
+<details>
+<summary><h3>🌱 EcoDose - Smart Biofertilizer Recommendation System</h3></summary>
+
+<div align="left">
+
+[![ML](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://github.com/varunaditya27/EcoDose)
+[![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)](https://github.com/varunaditya27/EcoDose)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](https://github.com/varunaditya27/EcoDose)
+[![IoT](https://img.shields.io/badge/IoT-00979D?style=flat-square&logo=arduino&logoColor=white)](https://github.com/varunaditya27/EcoDose)
+
+**Smart agricultural system achieving 90% accuracy in biofertilizer recommendations**
+
+#### 🎯 Key Features
+- **🤖 ML-Powered Predictions** - Random Forest & Linear Regression models for precise dosage calculation
+- **📡 Real-time Soil Monitoring** - ESP32-based sensors for NPK, pH, moisture & temperature
+- **💬 Conversational AI Assistant** - Natural language guidance for farmers
+- **🎯 End-to-End IoT Pipeline** - Seamless data flow from sensors to cloud analytics
+- **📊 Historical Analytics** - Track soil health trends over time
+
+#### 💡 Technical Highlights
+- Embedded C firmware for ESP32 microcontroller
+- MQTT protocol for reliable sensor-to-cloud communication
+- Flask-based RESTful API for model serving
+- scikit-learn for ML model development & optimization
+
+[**→ View Repository**](https://github.com/varunaditya27/EcoDose)
+
+</div>
+</details>
+
+<!-- Project 4 -->
+<details>
+<summary><h3>🤖 TaskNova - Intelligent Telegram Productivity Agent</h3></summary>
+
+<div align="left">
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/TaskNova)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://github.com/varunaditya27/TaskNova)
+[![Gemini](https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/varunaditya27/TaskNova)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)](https://github.com/varunaditya27/TaskNova)
+
+**Context-aware productivity bot transforming natural language into actionable tasks**
+
+#### 🎯 Key Features
+- **🧠 Natural Language Processing** - Extracts tasks, deadlines & priorities from casual conversation
+- **⏰ Smart Reminder System** - Urgency-based nudging with escalating notifications
+- **🚀 Cloud-Native Deployment** - Serverless architecture on Render with auto-scaling
+- **💡 Context-Aware Scheduling** - Handles vague temporal references like "tomorrow evening" or "next week"
+- **📱 Seamless Integration** - Native Telegram bot experience with inline commands
+
+#### 💡 Technical Highlights
+- Telegram Bot API with webhook-based event handling
+- Gemini AI for intent recognition & entity extraction
+- SQLite database for lightweight task persistence
+- APScheduler for reliable reminder execution
+
+[**→ View Repository**](https://github.com/varunaditya27/TaskNova)
+
+</div>
+</details>
+
+</div>
+
+<br>
+
+<!-- GitHub Stats Section -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="35" /> Performance Metrics
+
+<div align="center">
+
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=varunaditya27&theme=tokyonight" alt="Contribution Graph"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=varunaditya27&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=00d9ff&icon_color=00d9ff&text_color=c3e88d" alt="GitHub Stats"/>
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=varunaditya27&theme=tokyonight&hide_border=true&background=1a1b27&ring=00d9ff&fire=00d9ff&currStreakLabel=00d9ff" alt="Streak Stats"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=varunaditya27&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=00d9ff&text_color=c3e88d" alt="Top Languages"/>
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=varunaditya27&theme=tokyonight&utcOffset=5.5" alt="Commit Time"/>
+
+</div>
+
+<br>
+
+<!-- Activity Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=varunaditya27&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=00d9ff&line=00d9ff&point=c3e88d" width="100%" alt="Activity Graph"/>
+</div>
+
+<br>
+
+<!-- Achievements & Leadership -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Trophy.png" width="35" /> Achievements & Leadership
+
+<div align="center">
+
+| 🎯 Achievement | 📊 Impact |
+|:---|:---|
+| **🚀 AI Odyssey 2025 - Event Lead** | Orchestrated flagship AI/ML event for **90+ participants** with hands-on workshops & expert sessions |
+| **🎓 Academic Excellence** | CGPA: **9.93/10** • Class 12: **97.2%** • Class 10: **96.8%** |
+| **🏆 RVCE Mathematics Quiz Champion** | Secured **1st place** among multi-departmental participants |
+| **👨‍🏫 Technical Workshop Speaker** | Delivered comprehensive AI fundamentals workshop with **exceptional feedback** |
+| **💡 RVCE WiC Insider Circle** | Selected member driving technical innovation initiatives |
+| **🌟 National Hackathon Finalist** | Top teams at prestigious inter-college competitions |
+| **📖 Open Source Contributor** | **33+ public repositories** advancing AI/ML & blockchain applications |
+
+</div>
+
+<br>
+
+<!-- Trophy Cabinet -->
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=varunaditya27&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies" />
+</div>
+
+<br>
+
+<!-- Current Focus -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="35" /> Current Research & Development
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 📚 Learning
+- Mathematical Foundations for ML *(NPTEL)*
+- Large Language Model Architectures
+- Quantum Algorithms with Qiskit
+- Advanced System Design Patterns
+- Distributed Systems & Microservices
 
 </td>
-<td width="50%">
+<td width="33%" valign="top">
 
-### 🤖 [TaskNova](https://github.com/varunaditya27/TaskNova)
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram">
-<img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Gemini">
+### 🔨 Building
+- **NOVA Chatbot** - Dual-LLM chaining architecture
+- **ResearchRanker** - AI paper discovery system
+- **Context-Aware Memory Systems**
+- **Edge ML Deployment Strategies**
+- **Quantum-Classical Hybrid Models**
 
-**Intelligent Telegram productivity agent** with adaptive scheduling
-- 🧠 **Natural language parsing** extracting tasks & deadlines contextually
-- ⏰ **Smart reminder orchestration** with urgency-based nudging
-- 🚀 **Cloud-native deployment** on Render with webhook integration
-- 💡 **Context-aware scheduling** handling vague temporal references
+</td>
+<td width="33%" valign="top">
+
+### 🎯 Research
+- Quantum-classical hybrid algorithms
+- LLM hallucination mitigation techniques
+- Real-time IoT data pipelines
+- Federated learning for healthcare
+- Neural architecture search automation
 
 </td>
 </tr>
 </table>
 
-<!-- GitHub Stats with Custom Theme -->
-## <img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="30"> Performance Metrics
+<br>
+
+<!-- Skills Progress Bars -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="35" /> Skill Matrix
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=varunaditya27&theme=radical" alt="Profile Details" />
+
+**Full-Stack Development**  
+![](https://geps.dev/progress/95?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
+**AI/ML Engineering**  
+![](https://geps.dev/progress/90?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
+**System Architecture**  
+![](https://geps.dev/progress/85?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
+**Blockchain Development**  
+![](https://geps.dev/progress/80?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
+**Quantum Computing**  
+![](https://geps.dev/progress/75?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
+**IoT & Edge Computing**  
+![](https://geps.dev/progress/88?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+
 </div>
+
+<br>
+
+<!-- Coding Activity -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Fire.png" width="35" /> Coding Activity
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=varunaditya27&theme=radical" alt="Repos per Language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=varunaditya27&theme=radical" alt="Most Commit Language" />
+
+<!--START_SECTION:waka-->
+```text
+TypeScript   12 hrs 34 mins  ████████████░░░░░░░░░   48.2%
+Python       8 hrs 15 mins   ████████░░░░░░░░░░░░░   31.7%
+JavaScript   3 hrs 42 mins   ███░░░░░░░░░░░░░░░░░░   14.2%
+JSON         45 mins         ░░░░░░░░░░░░░░░░░░░░░    2.9%
+Markdown     32 mins         ░░░░░░░░░░░░░░░░░░░░░    2.1%
+Other        14 mins         ░░░░░░░░░░░░░░░░░░░░░    0.9%
+```
+<!--END_SECTION:waka-->
+
 </div>
 
+<br>
+
+<!-- Inspirational Quote -->
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=varunaditya27&theme=radical" alt="Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=varunaditya27&theme=radical&utcOffset=5.5" alt="Productive Time" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20best%20way%20to%20predict%20the%20future%20is%20to%20invent%20it&author=Alan%20Kay" alt="Dev Quote"/>
 </div>
 
-<!-- Snake Animation -->
-## 🐍 Contribution Snake
+<br>
+
+<!-- Contribution Snake -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" width="35" /> Contribution Graph
 
 <div align="center">
   <picture>
@@ -204,100 +489,65 @@ class VarunAditya:
   </picture>
 </div>
 
-<!-- GitHub Trophies -->
-## 🏆 GitHub Trophy Cabinet
+<br>
 
-<div align="right">
-
-  <img src="https://github-profile-trophy.vercel.app/?username=varunaditya27&theme=radical&no-frame=false&no-bg=false&margin-w=4&column=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" alt="All GitHub Trophies" />
-  
-</div>
-
-
-<!-- Achievement Section -->
-## 🏆 Achievements & Leadership
+<!-- Connect Section -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" /> Let's Collaborate
 
 <div align="center">
 
-| 🎯 **Achievement** | 📊 **Impact** |
-|:---|:---|
-| **AI Odyssey 2025 - Event Lead** | Orchestrated flagship AI/ML event for 90+ participants with hands-on workshops |
-| **Academic Excellence** | CGPA: 9.93/10 • Class 12: 97.2% • Class 10: 96.8% |
-| **RVCE Mathematics Quiz Champion** | First place among multi-departmental participants |
-| **Technical Workshop Speaker** | Delivered AI fundamentals workshop with exceptional participant feedback |
-| **Open Source Contributor** | 14 public repositories advancing AI/ML applications |
+**Open to collaboration on:**  
+🔬 AI/ML Research Projects • 🚀 Open-Source Initiatives • 🎯 Innovative Hackathons • 💡 Startup Ventures
 
-</div>
-
-<!-- Current Focus -->
-## 🔬 Current Research & Development
+<br>
 
 <table>
 <tr>
-<td width="33%" valign="top">
-
-### 📚 Learning Pipeline
-- Mathematical Foundations for ML (NPTEL)
-- Large Language Models Architecture
-- Quantum Algorithms & Qiskit
-- Advanced System Design Patterns
-
+<td align="center" width="200">
+<a href="https://varun-aditya-portfolio.vercel.app">
+<img src="https://img.icons8.com/fluency/96/000000/domain.png" width="50px"/>
+<br><sub><b>Portfolio</b></sub>
+</a>
 </td>
-<td width="33%" valign="top">
-
-### 🔨 Building
-- **NOVA Chatbot**: Dual-LLM chaining architecture
-- **ResearchRanker**: AI-driven paper discovery system
-- Context-aware memory systems
-- Edge ML deployment strategies
-
+<td align="center" width="200">
+<a href="https://linkedin.com/in/varunaditya27">
+<img src="https://img.icons8.com/fluency/96/000000/linkedin.png" width="50px"/>
+<br><sub><b>LinkedIn</b></sub>
+</a>
 </td>
-<td width="33%" valign="top">
-
-### 🎯 Research Focus
-- Quantum-classical hybrid algorithms
-- LLM hallucination mitigation
-- Real-time IoT data pipelines
-- Federated learning systems
-
+<td align="center" width="200">
+<a href="mailto:varun.paparajugari@gmail.com">
+<img src="https://img.icons8.com/fluency/96/000000/gmail.png" width="50px"/>
+<br><sub><b>Email</b></sub>
+</a>
+</td>
+<td align="center" width="200">
+<a href="https://github.com/varunaditya27">
+<img src="https://img.icons8.com/fluency/96/000000/github.png" width="50px"/>
+<br><sub><b>GitHub</b></sub>
+</a>
 </td>
 </tr>
 </table>
 
-<!-- Quote Section -->
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
-</div>
+<br>
 
-<!-- Connect Section -->
-## 🤝 Let's Collaborate
-
-<div align="center">
-  
-I'm actively seeking collaboration on **AI/ML research projects**, **open-source initiatives**, and **innovative hackathons**.
-
-<a href="https://linkedin.com/in/varunaditya27">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
-<a href="https://github.com/varunaditya27">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<a href="mailto:varunaditya.is24@rvce.edu.in">
-  <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<a href="https://varun-aditya-portfolio.vercel.app">
-  <img src="https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" />
-</a>
+[![](https://img.shields.io/badge/⭐_Star_My_Repos-If_You_Find_Them_Useful-00D9FF?style=for-the-badge)](https://github.com/varunaditya27?tab=repositories)
 
 </div>
+
+<br>
 
 <!-- Footer -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer&fontSize=90&fontAlignY=35&animation=twinkling" />
+  
+### 💭 *"Code is poetry written in logic"*
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer"/>
+
 </div>
 
-<!-- Hidden Watermark -->
-<!-- Profile crafted with precision by Varun Aditya -->
+<!-- Watermark -->
+<div align="center">
+  <sub>🎨 Crafted with passion by <a href="https://github.com/varunaditya27">Varun Aditya</a></sub>
+</div>
