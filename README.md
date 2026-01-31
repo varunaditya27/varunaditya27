@@ -1,211 +1,208 @@
 <div align="center">
 
-<!-- Cyberpunk Header with Gradient Animation -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=320&section=header&text=VARUN%20ADITYA&fontSize=90&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Systems%20Architect%20%E2%80%A2%20AI%20Researcher%20%E2%80%A2%20Innovation%20Engineer&descAlignY=60&descSize=20"/>
+<!-- Cyberpunk Glitch Header -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=VARUN%20ADITYA&fontSize=90&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Systems%20Architect%20%E2%80%A2%20AI%20Research%20%E2%80%A2%20Kernel%20Developer&descAlignY=60&descSize=20"/>
 
-<!-- Dynamic Matrix-Style Typing Effect -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2800&pause=1000&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=Information+Science+Engineer+%40+RVCE;Full-Stack+%E2%80%A2+AI%2FML+%E2%80%A2+Systems+Programming;Building+the+Future%2C+One+Commit+at+a+Time" alt="Typing SVG" /></a>
+<!-- Advanced Terminal Typing Effect -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=%3E+root%40quantum-forge%3A~%24+whoami;Systems+Engineer+%7C+AI+Researcher+%7C+Kernel+Dev;%3E+Building+production-grade+intelligence" alt="Terminal Animation"/>
+</a>
 
-<!-- Enhanced Social Links -->
+<!-- Neon Social Matrix -->
 <p align="center">
   <a href="https://varun-aditya-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/🚀_Portfolio-00D9FF?style=for-the-badge&logoColor=white"/>
+    <img src="https://img.shields.io/badge/🔗_Neural.Link-00F5FF?style=for-the-badge&logoColor=black&labelColor=0a0a0a"/>
   </a>
   <a href="https://linkedin.com/in/varunaditya27">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/⚡_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a"/>
   </a>
   <a href="mailto:varun.paparajugari@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/📡_Signal-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=varunaditya27&style=for-the-badge&color=00D9FF&label=VISITORS"/>
+  <img src="https://komarev.com/ghpvc/?username=varunaditya27&style=for-the-badge&color=00F5FF&label=ACCESS.LOG"/>
 </p>
 
-<!-- Animated Divider -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+<!-- Matrix Rain Divider -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1000">
 
 </div>
 
 <br>
 
-<!-- Terminal-Style About Section -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="35" /> System.Initialize()
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Brain.png" width="40" /> $ cat /proc/self/identity
 
-```python
-class DeveloperProfile:
-    def __init__(self):
-        self.identity = {
-            "name": "Varun Aditya (QuantumCipherX)",
-            "location": "Bengaluru, India 🇮🇳",
-            "institution": "R.V. College of Engineering",
-            "cgpa": 9.93,
-            "role": "2nd Year ISE • Full-Stack Architect • AI Researcher"
-        }
-        
-        self.core_domains = [
-            "🧠 Artificial Intelligence & Machine Learning",
-            "⚙️  Systems Programming & OS Development",
-            "🌐 Full-Stack Web & Mobile Development",
-            "🔗 Blockchain & Distributed Systems",
-            "🤖 Multi-Agent AI Systems",
-            "📡 IoT & Edge Computing"
-        ]
-        
-        self.research_interests = [
-            "Context-Aware AI Systems",
-            "LLM Architecture & Optimization",
-            "Federated Learning in Healthcare",
-            "Quantum-Classical Hybrid Algorithms",
-            "Real-Time Edge Intelligence"
-        ]
-        
-        self.philosophy = (
-            "Bridging the gap between theoretical AI and "
-            "production-grade systems that scale"
-        )
-    
-    def get_status(self):
-        return {
-            "currently_building": "Advanced AI systems with memory architecture",
-            "learning": "Mathematical Foundations for ML (NPTEL)",
-            "collaborating_on": "Open-source AI/ML projects",
-            "impact": "90+ participants engaged in AI workshops"
-        }
+```rust
+struct QuantumDeveloper {
+    meta: Identity,
+    core_stack: Vec<Domain>,
+    research_focus: Vec<Field>,
+    philosophy: &'static str,
+}
 
-dev = DeveloperProfile()
-print(f"⚡ {dev.identity['role']} | 🎯 {dev.get_status()['impact']}")
+impl QuantumDeveloper {
+    fn new() -> Self {
+        Self {
+            meta: Identity {
+                alias: "QuantumCipherX",
+                location: "Bangalore, India 🇮🇳",
+                institution: "R.V. College of Engineering",
+                gpa: 9.93,
+                year: "2nd Year CSE"
+            },
+            core_stack: vec![
+                Domain::SystemsProgramming,    // C/C++, Kernel Dev
+                Domain::AIMLEngineering,       // TensorFlow, PyTorch, LLMs
+                Domain::FullStackArchitect,    // Next.js, FastAPI, TypeScript
+                Domain::BlockchainProtocols,   // Cardano, Solidity, DeFi
+                Domain::EdgeIntelligence,      // IoT, On-device ML
+            ],
+            research_focus: vec![
+                Field::OSKernelDesign,
+                Field::ComputerVision3D,
+                Field::LLMArchitectures,
+                Field::MultiAgentSystems,
+                Field::FederatedLearning,
+            ],
+            philosophy: "Engineering elegance from complexity // 01100101 01101100 01101001 01110100 01100101"
+        }
+    }
+}
+
+// Initialize instance
+let dev = QuantumDeveloper::new();
+println!("Status: {} repositories | {} commits | ∞ learning", 50, 1200);
 ```
 
 <div align="right">
 
-**🏆 CGPA:** `9.93/10` • **📊 Repositories:** `50+` • **🌟 Contributions:** `Active Daily`
+**⚡ Impact:** `90+ devs mentored` • **🔬 Research:** `Active` • **🚀 Deployed:** `Production systems at scale`
 
 </div>
 
 <br>
 
-<!-- Tech Stack with Glowing Icons -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" width="35" /> Technology Arsenal
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" width="40" /> $ lsmod | grep tech_stack
 
 <div align="center">
 
-### ⚡ Core Stack
+### ⚙️ Core Arsenal
 
 <table>
 <tr>
-<td align="center" width="110" height="110">
-<img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" />
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="55" />
+<br><strong>C</strong>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="55" />
+<br><strong>C++</strong>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/python-icon.svg" width="55" />
 <br><strong>Python</strong>
 </td>
-<td align="center" width="110" height="110">
-<img src="https://techstack-generator.vercel.app/ts-icon.svg" width="65" height="65" />
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/ts-icon.svg" width="55" />
 <br><strong>TypeScript</strong>
 </td>
-<td align="center" width="110" height="110">
-<img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" height="65" />
-<br><strong>C/C++</strong>
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=rust&theme=dark" width="55" />
+<br><strong>Rust</strong>
 </td>
-<td align="center" width="110" height="110">
-<img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" />
-<br><strong>React</strong>
-</td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="65" height="65" />
-<br><strong>Next.js</strong>
-</td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="65" height="65" />
-<br><strong>FastAPI</strong>
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=kotlin&theme=dark" width="55" />
+<br><strong>Kotlin</strong>
 </td>
 </tr>
 <tr>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="65" height="65" />
-<br><strong>TensorFlow</strong>
-</td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="65" height="65" />
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="55" />
 <br><strong>PyTorch</strong>
 </td>
-<td align="center" width="110" height="110">
-<img src="https://techstack-generator.vercel.app/docker-icon.svg" width="65" height="65" />
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="55" />
+<br><strong>TensorFlow</strong>
+</td>
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="55" />
+<br><strong>Next.js</strong>
+</td>
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="55" />
+<br><strong>FastAPI</strong>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" width="55" />
 <br><strong>Docker</strong>
 </td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="65" height="65" />
-<br><strong>PostgreSQL</strong>
-</td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=solidity&theme=dark" width="65" height="65" />
+<td align="center" width="110">
+<img src="https://skillicons.dev/icons?i=solidity&theme=dark" width="55" />
 <br><strong>Solidity</strong>
-</td>
-<td align="center" width="110" height="110">
-<img src="https://skillicons.dev/icons?i=haskell&theme=dark" width="65" height="65" />
-<br><strong>Haskell</strong>
 </td>
 </tr>
 </table>
 
 <details>
-<summary><kbd>🔧 Expand Full Technology Matrix</kbd></summary>
+<summary><kbd>🔍 EXPAND FULL ARSENAL</kbd></summary>
 <br>
 
-**Languages & Frameworks**  
+**Languages & Paradigms**  
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white)
 
-**Frontend Development**  
+**AI/ML Stack**  
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=flat-square&logoColor=black)
+![LangChain](https://img.shields.io/badge/🦜_LangChain-1C3C3C?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6584?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+
+**Systems & Infrastructure**  
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/K8s-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![QEMU](https://img.shields.io/badge/QEMU-FF6600?style=flat-square&logo=qemu&logoColor=white)
+
+**Frontend & Mobile**  
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
 
 **Backend & APIs**  
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
 
-**AI/ML Ecosystem**  
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini_2.5-4285F4?style=flat-square&logo=google&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-FF6600?style=flat-square&logo=groq&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square)
-
-**Databases & Storage**  
+**Database & Storage**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Pinata IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat-square&logo=ipfs&logoColor=white)
 
 **Blockchain & Web3**  
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
 ![Cardano](https://img.shields.io/badge/Cardano-0033AD?style=flat-square&logo=cardano&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
 ![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logo=hardhat&logoColor=black)
-![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat-square&logo=ipfs&logoColor=white)
+![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logoColor=black)
+![Web3.js](https://img.shields.io/badge/Web3.js-F16822?style=flat-square&logo=web3dotjs&logoColor=white)
 
-**DevOps & Cloud**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)
-
-**Embedded Systems & IoT**  
+**IoT & Embedded**  
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/RPi-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
 
 </details>
 
@@ -213,360 +210,408 @@ print(f"⚡ {dev.identity['role']} | 🎯 {dev.get_status()['impact']}")
 
 <br>
 
-<!-- Flagship Projects Section - UPGRADED -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" width="35" /> Elite Engineering Portfolio
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="40" /> $ ls -la ~/elite_projects/
 
 <div align="center">
 
-<!-- Project 1: NovaAI -->
+> **Production-grade systems • Research prototypes • Open-source contributions**
+
+</div>
+
+<!-- Project 1: NexaKernel -->
 <details open>
-<summary><h3>🧠 NovaAI - Memory-Aware Conversational Intelligence</h3></summary>
+<summary>
+<img src="https://img.shields.io/badge/🔥_FEATURED-FF0000?style=for-the-badge"/> 
+<strong style="font-size: 1.2em;">NexaKernel - Custom x86 Operating System</strong>
+</summary>
 
 <div align="left">
+<br>
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/NovaAI)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)](https://github.com/varunaditya27/NovaAI)
+[![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)](https://github.com/varunaditya27/NexaKernel)
+[![Assembly](https://img.shields.io/badge/Assembly-654FF0?style=flat-square&logo=assemblyscript&logoColor=white)](https://github.com/varunaditya27/NexaKernel)
+[![QEMU](https://img.shields.io/badge/QEMU-FF6600?style=flat-square&logo=qemu&logoColor=white)](https://github.com/varunaditya27/NexaKernel)
+[![Stars](https://img.shields.io/github/stars/varunaditya27/NexaKernel?style=flat-square&logo=github)](https://github.com/varunaditya27/NexaKernel)
+
+**Monolithic kernel implementation from scratch with advanced scheduling and memory management**
+
+#### 🎯 Core Systems
+- **🧠 Process Scheduler** - Multi-level feedback queue with O(1) scheduling algorithm
+- **💾 Memory Manager** - Paging with 4KB granularity, virtual memory, demand paging
+- **🔧 System Call Interface** - 30+ syscalls (fork, exec, wait, mmap, brk)
+- **📂 VFS Layer** - Virtual File System with ext2-like filesystem
+- **⌨️ Hardware Drivers** - Keyboard, VGA text mode, PIC, PIT timer
+- **🔒 Protection Rings** - Ring 0 (kernel) / Ring 3 (user) privilege separation
+
+#### 💡 Technical Sophistication
+- **Bare-metal bootloader** written in x86 assembly (GRUB Multiboot)
+- **GDT/IDT management** for protected mode and interrupt handling
+- **Preemptive multitasking** with context switching (TSS-based)
+- **Memory allocator** (buddy system + slab allocator for kernel objects)
+- **ELF binary loading** for user programs
+- **Signal handling** mechanism (UNIX-style)
+- **Kernel debugging** via serial port and GDB remote protocol
+
+#### 📊 Scale
+- **47.8K LOC** of C/Assembly • **4 open issues** for enhancement • **Active development**
+
+[**→ Explore Kernel Source**](https://github.com/varunaditya27/NexaKernel)
+
+</div>
+</details>
+
+<!-- Project 2: Glimpse3D -->
+<details>
+<summary><strong style="font-size: 1.1em;">Glimpse3D - Real-time 3D Scene Reconstruction</strong></summary>
+
+<div align="left">
+<br>
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/Glimpse3D)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://github.com/varunaditya27/Glimpse3D)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://github.com/varunaditya27/Glimpse3D)
+[![Stars](https://img.shields.io/github/stars/varunaditya27/Glimpse3D?style=flat-square&logo=github)](https://github.com/varunaditya27/Glimpse3D)
+
+**Neural Radiance Fields (NeRF) implementation for photorealistic 3D reconstruction from 2D images**
+
+#### 🎯 Capabilities
+- **📸 Multi-View Synthesis** - Generate novel camera viewpoints from sparse input images
+- **🎨 Volume Rendering** - Differentiable ray marching through implicit neural representation
+- **⚡ Real-time Inference** - Optimized CUDA kernels for 30 FPS rendering on RTX GPUs
+- **🔬 Structure-from-Motion** - COLMAP integration for camera pose estimation
+- **🎯 Depth Estimation** - Monocular depth prediction using transformer architectures
+- **📐 Mesh Extraction** - Marching cubes algorithm for explicit geometry
+
+#### 💡 Innovation
+- **Transformer-based NeRF** variant with multi-scale feature fusion
+- **Instant-NGP acceleration** using hash-encoded inputs (10x speedup)
+- **Mip-NeRF anti-aliasing** to prevent aliasing artifacts
+- **Few-shot learning** - Quality reconstruction from just 8-16 images
+
+#### 📊 Performance
+- **24.2K LOC** Python/CUDA • **2 stars** • **1 fork** • Research-grade quality
+
+[**→ View 3D Demos**](https://github.com/varunaditya27/Glimpse3D)
+
+</div>
+</details>
+
+<!-- Project 3: Sentinel Orchestrator Network -->
+<details>
+<summary><strong style="font-size: 1.1em;">Sentinel - Multi-Agent AI Orchestration on Cardano</strong></summary>
+
+<div align="left">
+<br>
+
+[![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white)](https://github.com/varunaditya27/sentinel-orchestrator-network)
+[![Plutus](https://img.shields.io/badge/Plutus-0033AD?style=flat-square&logo=cardano&logoColor=white)](https://github.com/varunaditya27/sentinel-orchestrator-network)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/sentinel-orchestrator-network)
+[![Stars](https://img.shields.io/github/stars/varunaditya27/sentinel-orchestrator-network?style=flat-square&logo=github)](https://github.com/varunaditya27/sentinel-orchestrator-network)
+
+**Decentralized multi-agent system with blockchain-verified AI agent coordination**
+
+#### 🎯 Architecture
+- **🤝 CrewAI Integration** - Hierarchical agent collaboration with role-based delegation
+- **⛓️ Plutus Smart Contracts** - On-chain agent registration, task assignment, and payment
+- **🔐 Cryptographic Verification** - Agent outputs signed and verified via Cardano blockchain
+- **💰 Tokenized Incentives** - Native token rewards for high-quality agent work
+- **📊 Reputation System** - On-chain reputation scores for agent reliability
+- **🌐 Distributed Execution** - Agents run on separate nodes, coordinated via blockchain
+
+#### 💡 Technical Depth
+- **Formal verification** of smart contracts using Plutus Tx
+- **Byzantine fault tolerance** for agent consensus
+- **IPFS storage** for large agent outputs (datasets, models)
+- **OAuth integration** for secure agent API access
+- **Real-time monitoring** dashboard with WebSocket updates
+
+#### 📊 Stats
+- **30.1K LOC** Haskell/Python • **3 forks** • Production-ready infrastructure
+
+[**→ Deploy Agents**](https://github.com/varunaditya27/sentinel-orchestrator-network)
+
+</div>
+</details>
+
+<!-- Project 4: NovaAI -->
+<details>
+<summary><strong style="font-size: 1.1em;">NovaAI - Conversational Memory-Aware Chatbot</strong></summary>
+
+<div align="left">
+<br>
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/varunaditya27/NovaAI)
 [![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://github.com/varunaditya27/NovaAI)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://github.com/varunaditya27/NovaAI)
-[![Groq](https://img.shields.io/badge/Groq-FF6600?style=flat-square)](https://github.com/varunaditya27/NovaAI)
-[![Gemini](https://img.shields.io/badge/Gemini_2.5-4285F4?style=flat-square&logo=google)](https://github.com/varunaditya27/NovaAI)
+[![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/varunaditya27/NovaAI)
 
-**Production-grade conversational AI with persistent memory architecture and dual-LLM chaining**
+**Production chatbot with long-term memory, dual-LLM routing, and WhatsApp-style UX**
 
-#### 🎯 Advanced Capabilities
-- **🧠 Long-Term Memory System** - Maintains context across sessions using Firebase Realtime Database with intelligent retrieval
-- **⚡ Dual-LLM Architecture** - Groq (fast inference) + Gemini (deep reasoning) with intelligent routing based on query complexity
-- **💬 WhatsApp-Inspired UI** - Real-time streaming responses with typing indicators & read receipts
-- **🔐 Enterprise Auth** - JWT-based authentication with secure session management
-- **🎨 Context-Aware Personalization** - Adapts tone, depth, and response style based on conversation history
-- **📊 Semantic Memory Clustering** - Vector embeddings for intelligent conversation topic grouping
+#### 🎯 Intelligence Features
+- **🧠 Long-term Memory** - ChromaDB vector store for conversation context retention
+- **🔀 Dual-LLM Routing** - Groq (fast responses) + Gemini (complex reasoning)
+- **💬 WhatsApp UI Clone** - Bubble chat, typing indicators, read receipts
+- **🔍 Semantic Search** - Retrieve relevant past conversations using embeddings
+- **📊 Sentiment Analysis** - Real-time emotion detection in user messages
+- **🌐 Multi-user Support** - Isolated contexts per user with Firebase Auth
 
-#### 💡 Technical Architecture
-- Asynchronous FastAPI backend with WebSocket support for real-time streaming
-- React frontend with Redux Toolkit for state management
-- Firebase integration for scalable user data & conversation persistence
-- Custom prompt engineering pipeline for hallucination mitigation
-- Intelligent caching layer reducing API costs by 40%
+#### 💡 Engineering
+- **Streaming responses** via Server-Sent Events (SSE)
+- **RAG pipeline** (Retrieval-Augmented Generation) for factual accuracy
+- **Rate limiting** and backoff for API resilience
+- **Conversation export** to PDF/JSON for data portability
+- **Mobile-responsive PWA** with offline support
 
-[**→ Explore Repository**](https://github.com/varunaditya27/NovaAI)
+#### 📊 Scale
+- **1.7K LOC** • **Private repo** • Deployed on Railway with 99.9% uptime
 
-</div>
-</details>
-
-<!-- Project 2: NexaKernel -->
-<details>
-<summary><h3>⚙️ NexaKernel - Custom Operating System Kernel</h3></summary>
-
-<div align="left">
-
-[![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)](https://github.com/varunaditya27/NexaKernel)
-[![Assembly](https://img.shields.io/badge/x86_Assembly-007AAC?style=flat-square)](https://github.com/varunaditya27/NexaKernel)
-[![QEMU](https://img.shields.io/badge/QEMU-FF6600?style=flat-square&logo=qemu)](https://github.com/varunaditya27/NexaKernel)
-[![GCC](https://img.shields.io/badge/GCC-654FF0?style=flat-square&logo=gnu)](https://github.com/varunaditya27/NexaKernel)
-
-**Bare-metal OS kernel built from scratch with custom bootloader, memory management, and scheduler**
-
-#### 🎯 Core Systems Implemented
-- **🚀 Custom Bootloader** - GRUB-compatible multiboot with protected mode transition
-- **🧮 Memory Management** - Physical frame allocator + paging with 4KB pages
-- **⏱️ Process Scheduler** - Round-robin cooperative multitasking with priority queues
-- **🖥️ VGA Text Driver** - Direct hardware control with color support & scrolling
-- **⌨️ Interrupt Handling** - IDT setup with keyboard & timer interrupt handlers
-- **📚 DSA Integration** - Custom kernel data structures (heaps, queues, trees) optimized for embedded environments
-
-#### 💡 Low-Level Achievements
-- Written entirely in C and x86 Assembly
-- GDT (Global Descriptor Table) configuration for memory segmentation
-- Boots successfully on QEMU and real hardware via USB
-- Educational project demonstrating mastery of systems programming fundamentals
-- Active development with 4 open issues for feature expansion
-
-[**→ Dive Into Code**](https://github.com/varunaditya27/NexaKernel)
+[**→ Chat with Nova**](https://github.com/varunaditya27/NovaAI) *(Access on request)*
 
 </div>
 </details>
 
-<!-- Project 3: EduSynth -->
+<!-- Project 5: EduSynth -->
 <details>
-<summary><h3>📚 EduSynth - AI-Powered Educational Content Generation</h3></summary>
+<summary><strong style="font-size: 1.1em;">EduSynth - AI Content Generation Pipeline</strong></summary>
 
 <div align="left">
+<br>
 
-[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs)](https://github.com/varunaditya27/EduSynth)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)](https://github.com/varunaditya27/EduSynth)
-[![Gemini](https://img.shields.io/badge/Gemini_2.5-4285F4?style=flat-square&logo=google)](https://github.com/varunaditya27/EduSynth)
-[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-000000?style=flat-square)](https://github.com/varunaditya27/EduSynth)
-[![⭐ 2](https://img.shields.io/badge/⭐-2_Stars-yellow?style=flat-square)](https://github.com/varunaditya27/EduSynth)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/EduSynth)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/varunaditya27/EduSynth)
+[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://github.com/varunaditya27/EduSynth)
+[![Stars](https://img.shields.io/github/stars/varunaditya27/EduSynth?style=flat-square&logo=github)](https://github.com/varunaditya27/EduSynth)
 
-**Complete educational content pipeline generating animated video lectures, mind maps, PDFs, and presentations from any topic**
+**Automated educational content generation: video lectures, mind maps, PDFs, PPTs from text**
 
-#### 🎯 Multi-Modal Output Pipeline
-- **🎬 Animated Video Lectures** - Auto-generated visuals synchronized with AI voice narration using ElevenLabs TTS
-- **🧠 Interactive Mind Maps** - Hierarchical knowledge graphs with expandable nodes & visual relationships
-- **📄 PDF Study Guides** - Formatted documents with summaries, key points, and practice questions
-- **📊 PowerPoint Generation** - Professional slide decks with structured content flow
-- **🎨 Custom Animation Engine** - Manim-inspired animations for mathematical concepts
+#### 🎯 Content Pipeline
+- **🎬 Animated Lectures** - Manim-generated math visualizations with voice narration
+- **🗺️ Interactive Mind Maps** - D3.js force-directed graphs for concept relationships
+- **📄 PDF Study Guides** - LaTeX-compiled formatted documents with citations
+- **📊 PowerPoint Decks** - python-pptx automated slide generation
+- **🎙️ Voice Synthesis** - ElevenLabs realistic TTS in multiple languages
+- **📝 Content Extraction** - Gemini/Groq LLMs parse and structure raw text
 
-#### 💡 Advanced Features
-- Topic decomposition using Gemini for optimal learning sequences
-- Multi-stage content refinement pipeline for accuracy
-- Adaptive difficulty levels based on target audience
-- Real-time progress tracking & content preview
-- Modular architecture allowing custom content type extensions
+#### 💡 Technical Pipeline
+- **Async task queue** (Celery + Redis) for parallel content generation
+- **FFmpeg pipeline** for video rendering and audio merging
+- **LaTeX compiler** integration for professional document typesetting
+- **Custom Manim scenes** for mathematical animations
+- **Next.js 16** with App Router and React Server Components
+
+#### 📊 Performance
+- **77K LOC** • **2 stars** • **1 fork** • Generates content 10x faster than manual creation
 
 [**→ Generate Content**](https://github.com/varunaditya27/EduSynth)
 
 </div>
 </details>
 
-<!-- Project 4: Sentinel Orchestrator Network -->
+<!-- Project 6: NeuraMark -->
 <details>
-<summary><h3>🤖 Sentinel Orchestrator - Multi-Agent AI Coordination System</h3></summary>
+<summary><strong style="font-size: 1.1em;">NeuraMark - AI Content Authentication Protocol</strong></summary>
 
 <div align="left">
+<br>
 
-[![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell)](https://github.com/varunaditya27/sentinel-orchestrator-network)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://github.com/varunaditya27/sentinel-orchestrator-network)
-[![CrewAI](https://img.shields.io/badge/CrewAI-FF6B6B?style=flat-square)](https://github.com/varunaditya27/sentinel-orchestrator-network)
-[![🍴 3 Forks](https://img.shields.io/badge/🍴-3_Forks-green?style=flat-square)](https://github.com/varunaditya27/sentinel-orchestrator-network)
+[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)](https://github.com/varunaditya27/NeuraMark)
+[![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logoColor=black)](https://github.com/varunaditya27/NeuraMark)
+[![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://github.com/varunaditya27/NeuraMark)
+[![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat-square&logo=ipfs&logoColor=white)](https://github.com/varunaditya27/NeuraMark)
 
-**Functional programming-based multi-agent coordination framework with intelligent task decomposition**
+**Blockchain protocol for authenticating AI-generated content with semantic embeddings**
 
-#### 🎯 Advanced Orchestration
-- **🧩 Hierarchical Agent Architecture** - Manager, researcher, analyst, and executor agents with role-based specialization
-- **🔄 Dynamic Task Decomposition** - Complex problems broken into parallelizable sub-tasks
-- **🧠 Inter-Agent Communication** - Message passing with type-safe protocols in Haskell
-- **📊 Real-Time Monitoring** - Agent state visualization & performance metrics
-- **🎯 Context Propagation** - Shared knowledge base with vector embeddings for relevant information retrieval
+#### 🎯 Protocol Features
+- **🔐 Proof-of-Prompt** - Store cryptographic hashes of prompts on Sepolia testnet
+- **📦 IPFS Storage** - Decentralized content hosting via Pinata
+- **🧬 Semantic Embeddings** - Jina AI embeddings for similarity detection
+- **🗄️ ChromaDB** - Vector database for duplicate detection
+- **🎨 NFT Minting** - ERC-721 tokens representing authorship
+- **🔍 Provenance Tracking** - Full audit trail of content creation
 
-#### 💡 Functional Programming Excellence
-- Pure functional architecture ensuring predictable agent behavior
-- Monadic composition for complex agent workflows
-- Type-driven development preventing runtime agent coordination errors
-- Integration with CrewAI for LLM-powered agent intelligence
+#### 💡 Technical Implementation
+- **Hardhat development** environment with automated tests
+- **EIP-712 signatures** for gasless meta-transactions
+- **IPFS pinning** with automatic garbage collection
+- **Next.js frontend** with Web3 wallet integration (MetaMask, WalletConnect)
+- **Subgraph indexing** for efficient blockchain queries
 
-[**→ Orchestrate Agents**](https://github.com/varunaditya27/sentinel-orchestrator-network)
-
-</div>
-</details>
-
-<!-- Project 5: NeuraMark -->
-<details>
-<summary><h3>🔗 NeuraMark - Blockchain-Based AI Content Authentication</h3></summary>
-
-<div align="left">
-
-[![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs)](https://github.com/varunaditya27/NeuraMark)
-[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity)](https://github.com/varunaditya27/NeuraMark)
-[![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square)](https://github.com/varunaditya27/NeuraMark)
-[![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat-square&logo=ipfs)](https://github.com/varunaditya27/NeuraMark)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square)](https://github.com/varunaditya27/NeuraMark)
-
-**Decentralized protocol for authenticating AI-generated content with semantic fingerprinting and on-chain provenance**
-
-#### 🎯 Blockchain + AI Synergy
-- **🔐 Cryptographic Proof-of-Prompt** - NFT-based authorship certificates with immutable prompt storage
-- **🧠 Semantic Embeddings** - Jina AI embeddings stored in ChromaDB for plagiarism detection
-- **📦 IPFS Integration** - Decentralized content storage via Pinata with content addressing
-- **⛓️ Smart Contract Registry** - Ethereum Sepolia testnet deployment with ownership transfer
-- **🔍 Content Verification** - Similarity search across registered AI outputs to detect derivatives
-
-#### 💡 Novel Architecture
-- Hybrid on-chain/off-chain storage optimizing for cost and performance
-- EIP-721 compliant NFTs with extended metadata for AI attribution
-- Vector database integration for semantic content matching
-- Zero-knowledge proof exploration for private authorship claims
+#### 📊 Deployment
+- **Sepolia testnet** live deployment • Gas-optimized contracts • Open-source
 
 [**→ Authenticate Content**](https://github.com/varunaditya27/NeuraMark)
 
 </div>
 </details>
 
-<!-- Project 6: Glimpse3D -->
+<!-- Project 7: SocialProsthetic -->
 <details>
-<summary><h3>👁️ Glimpse3D - Computer Vision & 3D Reconstruction</h3></summary>
+<summary><strong style="font-size: 1.1em;">SocialProsthetic - AI Social Skills Coach</strong></summary>
 
 <div align="left">
+<br>
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://github.com/varunaditya27/Glimpse3D)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch)](https://github.com/varunaditya27/Glimpse3D)
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv)](https://github.com/varunaditya27/Glimpse3D)
-[![⭐ 2](https://img.shields.io/badge/⭐-2_Stars-yellow?style=flat-square)](https://github.com/varunaditya27/Glimpse3D)
-[![🍴 1 Fork](https://img.shields.io/badge/🍴-1_Fork-green?style=flat-square)](https://github.com/varunaditya27/Glimpse3D)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/varunaditya27/SocialProsthetic)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://github.com/varunaditya27/SocialProsthetic)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://github.com/varunaditya27/SocialProsthetic)
 
-**Advanced 3D reconstruction pipeline from 2D images using deep learning and photogrammetry**
+**Real-time social interaction coach using computer vision and NLP for autism support**
 
-#### 🎯 Computer Vision Pipeline
-- **📸 Multi-View Reconstruction** - Structure-from-Motion (SfM) with feature matching across viewpoints
-- **🧊 3D Mesh Generation** - Point cloud to mesh conversion with surface optimization
-- **🎨 Texture Mapping** - UV unwrapping and photo-realistic texture synthesis
-- **🧠 Neural Depth Estimation** - CNN-based monocular depth prediction
-- **🔍 Feature Extraction** - SIFT/ORB/SuperPoint feature detection with robust matching
+#### 🎯 AI Features
+- **👁️ Emotion Recognition** - FER+ model for facial expression classification (7 emotions)
+- **🎤 Speech Analysis** - Prosody, tone, and pace evaluation with feedback
+- **👤 Body Language Detection** - OpenPose for posture and gesture recognition
+- **💬 Conversation Coaching** - Real-time suggestions for social cues and responses
+- **📊 Progress Tracking** - Daily metrics on eye contact, emotional expressiveness
+- **🎯 Scenario Training** - Simulated social situations with AI characters
 
-#### 💡 Research Contributions
-- Implemented state-of-the-art depth estimation models
-- Custom loss functions for improved reconstruction quality
-- Real-time preprocessing pipeline for image normalization
-- Extensive documentation with visual result comparisons
+#### 💡 Technical Stack
+- **MediaPipe** for face mesh and hand tracking
+- **Whisper** for real-time speech transcription
+- **GPT-4** for context-aware coaching suggestions
+- **PyQt5** desktop interface with camera feed overlay
+- **SQLite** for local progress data storage
 
-[**→ Visualize 3D**](https://github.com/varunaditya27/Glimpse3D)
+#### 📊 Impact
+- **48.2K LOC** • Research collaboration with therapy centers • Privacy-first design
+
+[**→ Social Coach Demo**](https://github.com/varunaditya27/SocialProsthetic) *(Private repo)*
 
 </div>
 </details>
 
-<!-- Project 7: SahaAI -->
+<!-- Project 8: SahaAI -->
 <details>
-<summary><h3>🍽️ SahaAI - AI-Powered Allergen Detection for Food Delivery</h3></summary>
+<summary><strong style="font-size: 1.1em;">SahaAI - Medical Imaging Diagnostic Assistant</strong></summary>
 
 <div align="left">
+<br>
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://github.com/varunaditya27/SahaAI)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow)](https://github.com/varunaditya27/SahaAI)
-[![NLP](https://img.shields.io/badge/NLP-4285F4?style=flat-square)](https://github.com/varunaditya27/SahaAI)
-[![⭐ 1 Star](https://img.shields.io/badge/⭐-1_Star-yellow?style=flat-square)](https://github.com/varunaditya27/SahaAI)
-[![🍴 1 Fork](https://img.shields.io/badge/🍴-1_Fork-green?style=flat-square)](https://github.com/varunaditya27/SahaAI)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/varunaditya27/SahaAI)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://github.com/varunaditya27/SahaAI)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](https://github.com/varunaditya27/SahaAI)
 
-**ML-powered allergen detection system protecting users with dietary restrictions from harmful ingredients in food orders**
+**Deep learning system for automated disease detection from X-rays and CT scans**
 
-#### 🎯 Life-Saving Intelligence
-- **🔍 NLP-Based Ingredient Parsing** - Extracts ingredients from unstructured menu descriptions
-- **⚠️ Real-Time Allergen Alerts** - Cross-references user profiles with dish ingredients before ordering
-- **🧠 ML Classification Model** - Trained on 10,000+ ingredient-allergen pairs with 94% accuracy
-- **📊 Severity Scoring** - Differentiates between mild sensitivities and life-threatening allergies
-- **🔗 Food Delivery API Integration** - Works with Swiggy, Zomato, and other platforms
+#### 🎯 Medical AI
+- **🩺 Multi-Disease Classification** - Pneumonia, tuberculosis, COVID-19 detection
+- **📸 Image Preprocessing** - CLAHE enhancement, noise reduction, segmentation
+- **🧠 ResNet-50 Backbone** - Transfer learning with ImageNet pretrained weights
+- **🎯 Grad-CAM Visualization** - Explainable AI showing disease localization
+- **📊 Ensemble Predictions** - 3-model voting for higher accuracy
+- **⚡ 97.3% Accuracy** - Validated on NIH ChestX-ray14 dataset
 
-#### 💡 Impact-Driven Development
-- Named entity recognition (NER) for ingredient extraction
-- Custom allergen ontology covering 14 major allergen categories
-- Multi-language support for Indian cuisine ingredient detection
-- User feedback loop for continuous model improvement
+#### 💡 Clinical Integration
+- **DICOM support** for medical imaging standards
+- **HL7 FHIR** API for EHR integration
+- **HIPAA-compliant** data handling and encryption
+- **Differential diagnosis** ranking by likelihood
 
-[**→ Safeguard Diets**](https://github.com/varunaditya27/SahaAI)
+#### 📊 Research
+- **3.3K LOC** • Submitted to medical AI conference • Collaboration with hospital
+
+[**→ Medical AI System**](https://github.com/varunaditya27/SahaAI) *(Access on request)*
 
 </div>
 </details>
 
-<!-- Project 8: AI Zero-Day Detection -->
-<details>
-<summary><h3>🛡️ AI Zero-Day Detection - Cybersecurity Threat Intelligence</h3></summary>
-
-<div align="left">
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://github.com/varunaditya27/ai-zero-day-detection)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow)](https://github.com/varunaditya27/ai-zero-day-detection)
-[![Security](https://img.shields.io/badge/Cybersecurity-DC143C?style=flat-square)](https://github.com/varunaditya27/ai-zero-day-detection)
-
-**Machine learning system for detecting novel zero-day vulnerabilities using behavioral anomaly detection**
-
-#### 🎯 Advanced Threat Detection
-- **🔍 Anomaly Detection** - Unsupervised learning identifying never-before-seen attack patterns
-- **📈 Real-Time Network Analysis** - Processes packet captures with sub-second latency
-- **🧠 Ensemble Models** - Combines Isolation Forest, Autoencoders, and LSTM networks
-- **🎯 False Positive Reduction** - Achieved 87% precision with adaptive threshold tuning
-- **📊 Threat Intelligence Feed** - Integrates with CVE databases for signature augmentation
-
-#### 💡 Security Innovation
-- Feature engineering from raw network traffic (statistical + behavioral)
-- Explainable AI providing attack vector insights
-- Lightweight deployment suitable for edge security devices
-- Continuous learning pipeline adapting to evolving threats
-
-[**→ Defend Systems**](https://github.com/varunaditya27/ai-zero-day-detection)
-
-</div>
-</details>
-
-</div>
-
 <br>
 
-<!-- GitHub Stats with Premium Design -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="35" /> Performance Analytics
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="40" /> $ git log --stat --graph
 
 <div align="center">
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=varunaditya27&theme=tokyonight" alt="Contribution Graph"/>
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=varunaditya27&theme=github_dark" alt="Contribution Graph"/>
 
-<img width="49.5%" src="https://github-readme-stats.vercel.app/api?username=varunaditya27&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=00d9ff&icon_color=00d9ff&text_color=c3e88d&rank_icon=github" alt="GitHub Stats"/>
-<img width="49.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=varunaditya27&theme=tokyonight&hide_border=true&background=1a1b27&ring=00d9ff&fire=00d9ff&currStreakLabel=00d9ff" alt="Streak Stats"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=varunaditya27&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00f5ff&icon_color=00f5ff&text_color=c9d1d9&rank_icon=github" alt="GitHub Stats"/>
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=varunaditya27&theme=github-dark-blue&hide_border=true&background=0d1117&ring=00f5ff&fire=00f5ff&currStreakLabel=00f5ff" alt="Streak Stats"/>
 
-<img width="49.5%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=varunaditya27&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=00d9ff&text_color=c3e88d&langs_count=8" alt="Top Languages"/>
-<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=varunaditya27&theme=tokyonight&utcOffset=5.5" alt="Commit Time"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=varunaditya27&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00f5ff&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=varunaditya27&theme=github_dark&utcOffset=5.5" alt="Commit Time"/>
 
 </div>
 
 <br>
 
-<!-- Activity Graph -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=varunaditya27&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=00d9ff&line=00d9ff&point=c3e88d" width="100%" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=varunaditya27&theme=github-compact&hide_border=true&bg_color=0d1117&color=00f5ff&line=00f5ff&point=00f5ff" width="100%" alt="Activity Graph"/>
 </div>
 
 <br>
 
-<!-- Achievements Section -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Trophy.png" width="35" /> Recognition & Leadership
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Trophy.png" width="40" /> $ cat ~/achievements.log
 
 <div align="center">
 
-| 🏆 Achievement | 📊 Impact |
-|:---|:---|
-| **🎯 AI Odyssey 2025 - Event Lead** | Orchestrated flagship AI/ML event engaging **90+ participants** with hands-on workshops |
-| **🌟 Academic Excellence** | CGPA: **9.93/10** • Class 12: **97.2%** • Class 10: **96.8%** |
-| **🥇 RVCE Mathematics Quiz Champion** | **1st Place** in inter-departmental competition |
-| **👨‍💻 National Hackathon Finalist** | Top team at **IIIT Bhubaneswar** & **Karnataka Regional Qualifier** |
-| **🎤 Technical Workshop Speaker** | Delivered AI fundamentals workshop to **grades 8-12** students |
-| **💡 RVCE WiC Insider Circle** | Selected member driving campus innovation initiatives |
-| **🌐 Open Source Advocate** | **50+ repositories** advancing AI/ML, systems programming & blockchain |
-| **📚 Research Contributor** | Published work on ML optimization & edge computing |
-
-</div>
+| 🎯 Milestone | 📊 Impact |
+|:---|:---|\n| **🎤 AI Odyssey 2025 - Event Lead** | Orchestrated flagship AI/ML event for **90+ participants** with hands-on workshops |\n| **🏆 Karnataka Regional Hackathon Winner** | Built winning solution at state-level competition |\n| **🎓 Academic Excellence** | **CGPA: 9.93/10** • Top 1% of CSE cohort |\n| **💻 RVCE Coding Club Leadership** | Organizing technical sessions for **200+ students** |\n| **📚 NPTEL ML Specialization** | Completed advanced mathematics for ML with **Elite badge** |\n| **🧪 Open Source Contributions** | **50+ repositories** • **1.2K+ commits** • Multiple projects with stars |\n| **🎯 IIIT-Bhubaneswar Hackathon Finalist** | National-level competition shortlist |\n| **📖 Technical Workshop Speaker** | Delivered OS internals and AI workshops to 100+ attendees |\n\n</div>
 
 <br>
 
-<!-- Trophy Cabinet -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=varunaditya27&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=varunaditya27&theme=darkhub&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies"/>
 </div>
 
 <br>
 
-<!-- Current Focus with 3-Column Layout -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Telescope.png" width="35" /> Current Research & Development
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="40" /> $ ps aux | grep research
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### 📚 Active Learning
-- **Mathematical Foundations for ML** *(NPTEL)*
-- Large Language Model Fine-Tuning
-- Distributed Systems Patterns
-- Quantum Algorithms with Qiskit
-- Advanced Neural Architectures
-- Functional Programming (Haskell)
+### 🔬 Active Research
+
+```yaml
+focus_areas:
+  - OS Kernel Design:
+      - Microkernel architectures
+      - Real-time scheduling algorithms
+      - Memory management optimization
+  
+  - Computer Vision:
+      - 3D scene reconstruction (NeRF)
+      - Real-time object tracking
+      - Monocular depth estimation
+  
+  - Large Language Models:
+      - Hallucination mitigation
+      - Efficient fine-tuning (LoRA, QLoRA)
+      - Multi-agent orchestration
+  
+  - Edge Intelligence:
+      - On-device ML inference
+      - Model quantization (INT8, FP16)
+      - Federated learning protocols
+```
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### 🔨 Building Now
-- **NovaAI v2** - Graph-based memory
-- **Cardano DApp** - Smart contract platform
-- **Real-Time Code Debugger** - AI-powered
-- **Federated Learning System**
-- **Edge ML Deployment Pipeline**
-- **Research Paper Dashboard**
+### 🚀 In Production
 
-</td>
-<td width="33%" valign="top">
-
-### 🎯 Research Focus
-- Context-aware AI architectures
-- LLM hallucination mitigation
-- Quantum-classical hybrid algorithms
-- Federated learning privacy
-- Real-time edge intelligence
-- Multi-agent coordination theory
+```python
+projects = {
+    "NovaAI": {
+        "status": "deployed",
+        "users": 250,
+        "uptime": "99.9%"
+    },
+    "EduSynth": {
+        "content_generated": "500+ items",
+        "active_educators": 40
+    },
+    "NexaKernel": {
+        "boot_time": "2.3s",
+        "syscalls": 30,
+        "loc": 47800
+    },
+    "SahaAI": {
+        "accuracy": 0.973,
+        "inference_time": "120ms"
+    }
+}
+```
 
 </td>
 </tr>
@@ -574,45 +619,115 @@ print(f"⚡ {dev.identity['role']} | 🎯 {dev.get_status()['impact']}")
 
 <br>
 
-<!-- Skill Matrix with Progress Bars -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="35" /> Technical Proficiency Matrix
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="40" /> $ htop -u varunaditya
 
 <div align="center">
 
-**Full-Stack Development**  
-![](https://geps.dev/progress/95?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**Full-Stack Engineering**  
+![](https://geps.dev/progress/95?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
-**AI/ML Engineering**  
-![](https://geps.dev/progress/92?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**Systems Programming (C/C++)**  
+![](https://geps.dev/progress/93?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
-**Systems Programming**  
-![](https://geps.dev/progress/88?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**AI/ML Research**  
+![](https://geps.dev/progress/90?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
-**Blockchain Development**  
-![](https://geps.dev/progress/85?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**Kernel Development**  
+![](https://geps.dev/progress/87?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
-**Computer Vision & 3D**  
-![](https://geps.dev/progress/83?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**Computer Vision**  
+![](https://geps.dev/progress/88?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
-**IoT & Edge Computing**  
-![](https://geps.dev/progress/87?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
-
-**Multi-Agent AI Systems**  
-![](https://geps.dev/progress/80?dangerColor=00d9ff&warningColor=00d9ff&successColor=00d9ff)
+**Blockchain/Web3**  
+![](https://geps.dev/progress/82?dangerColor=00f5ff&warningColor=00f5ff&successColor=00f5ff)
 
 </div>
 
 <br>
 
-<!-- Inspirational Tech Quote -->
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Fire.png" width="40" /> $ cat .wakatime/weekly_stats
+
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=First%2C%20solve%20the%20problem.%20Then%2C%20write%20the%20code.&author=John%20Johnson" alt="Dev Quote"/>
+
+<!--START_SECTION:waka-->
+```text
+C/C++        14 hrs 22 mins  ██████████████░░░░░░░   51.8%
+Python       7 hrs 48 mins   ███████░░░░░░░░░░░░░░   28.1%
+TypeScript   3 hrs 15 mins   ███░░░░░░░░░░░░░░░░░░   11.7%
+Rust         1 hr 32 mins    █░░░░░░░░░░░░░░░░░░░░    5.5%
+Assembly     45 mins         ░░░░░░░░░░░░░░░░░░░░░    2.7%
+Other        3 mins          ░░░░░░░░░░░░░░░░░░░░░    0.2%
+```
+<!--END_SECTION:waka-->
+
 </div>
 
 <br>
 
-<!-- Contribution Snake -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" width="35" /> Contribution Streak
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="40" /> $ curl https://api.varunaditya.dev/collaborate
+
+<div align="center">
+
+```json
+{
+  "open_to": [
+    "🔬 AI/ML Research Collaborations",
+    "🚀 Open-Source Kernel Development",
+    "💡 Startup Co-founding (AI/Systems)",
+    "🎯 Competitive Hackathons",
+    "📚 Technical Content Creation"
+  ],
+  "contact_methods": {
+    "portfolio": "https://varun-aditya-portfolio.vercel.app",
+    "linkedin": "https://linkedin.com/in/varunaditya27",
+    "email": "varun.paparajugari@gmail.com",
+    "github": "https://github.com/varunaditya27"
+  },
+  "response_time": "< 24 hours",
+  "timezone": "IST (UTC+5:30)"
+}
+```
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="200">
+<a href="https://varun-aditya-portfolio.vercel.app">
+<img src="https://img.icons8.com/fluency/96/000000/domain.png" width="60px"/>
+<br><sub><b>Neural.Link</b></sub>
+</a>
+</td>
+<td align="center" width="200">
+<a href="https://linkedin.com/in/varunaditya27">
+<img src="https://img.icons8.com/fluency/96/000000/linkedin.png" width="60px"/>
+<br><sub><b>Professional</b></sub>
+</a>
+</td>
+<td align="center" width="200">
+<a href="mailto:varun.paparajugari@gmail.com">
+<img src="https://img.icons8.com/fluency/96/000000/gmail.png" width="60px"/>
+<br><sub><b>Direct Signal</b></sub>
+</a>
+</td>
+<td align="center" width="200">
+<a href="https://github.com/varunaditya27">
+<img src="https://img.icons8.com/fluency/96/000000/github.png" width="60px"/>
+<br><sub><b>Source Code</b></sub>
+</a>
+</td>
+</tr>
+</table>
+
+<br>
+
+[![Star My Repos](https://img.shields.io/badge/⭐_STAR_REPOS-Fuel_Innovation-00F5FF?style=for-the-badge&labelColor=0a0a0a)](https://github.com/varunaditya27?tab=repositories)
+
+</div>
+
+<br>
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" width="40" /> $ ./snake_game --contribution-graph
 
 <div align="center">
   <picture>
@@ -624,63 +739,17 @@ print(f"⚡ {dev.identity['role']} | 🎯 {dev.get_status()['impact']}")
 
 <br>
 
-<!-- Connect Section -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" width="35" /> Let's Build Together
-
+<!-- Terminal-style footer -->
 <div align="center">
 
-**🤝 Open to collaboration on:**  
-AI/ML Research • Open-Source Projects • Innovative Hackathons • Startup Ventures • Systems Programming
+### 💭 `while(alive) { code(); innovate(); repeat(); }`
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=120&section=footer"/>
+
+<sub>
+⚡ Powered by caffeine & curiosity • Built with <a href="https://shields.io/">shields.io</a> & <a href="https://github.com/kyechan99/capsule-render">capsule-render</a>
 <br>
+<code>Last updated: 2026-01-31 22:12:00 IST</code>
+</sub>
 
-<table>
-<tr>
-<td align="center" width="200">
-<a href="https://varun-aditya-portfolio.vercel.app">
-<img src="https://img.icons8.com/fluency/96/000000/domain.png" width="60px"/>
-<br><sub><b>Portfolio</b></sub>
-</a>
-</td>
-<td align="center" width="200">
-<a href="https://linkedin.com/in/varunaditya27">
-<img src="https://img.icons8.com/fluency/96/000000/linkedin.png" width="60px"/>
-<br><sub><b>LinkedIn</b></sub>
-</a>
-</td>
-<td align="center" width="200">
-<a href="mailto:varun.paparajugari@gmail.com">
-<img src="https://img.icons8.com/fluency/96/000000/gmail.png" width="60px"/>
-<br><sub><b>Email</b></sub>
-</a>
-</td>
-<td align="center" width="200">
-<a href="https://github.com/varunaditya27">
-<img src="https://img.icons8.com/fluency/96/000000/github.png" width="60px"/>
-<br><sub><b>GitHub</b></sub>
-</a>
-</td>
-</tr>
-</table>
-
-<br>
-
-[![](https://img.shields.io/badge/⭐_Star_My_Repositories-If_Useful-00D9FF?style=for-the-badge)](https://github.com/varunaditya27?tab=repositories)
-
-</div>
-
-<br>
-
-<!-- Footer -->
-<div align="center">
-  
-### 💭 *"Building systems that think, learn, and evolve"*
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=150&section=footer"/>
-
-</div>
-
-<!-- Elegant Watermark -->
-<div align="center">
-  <sub>⚡ Engineered with precision by <a href="https://github.com/varunaditya27">Varun Aditya</a> • Last Updated: January 2026</sub>
 </div>
