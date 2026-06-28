@@ -4,7 +4,7 @@
 
 <!-- ░░░░░░░░░░░░░░░░  ANIMATED HEADER  ░░░░░░░░░░░░░░░░ -->
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=320&section=header&text=VARUN%20ADITYA&fontSize=90&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Information%20Science%20Engineer%20%40%20RVCE%20%E2%80%A2%20Bengaluru%2C%20India%20%F0%9F%87%AE%F0%9F%87%B3&descAlignY=62&descSize=20&descColor=a0c4ff"/>
+<img src="./banner.svg" width="100%" alt="Varun Aditya — Systems Architect · AI Engineer"/>
 </div>
 
 <br>
