@@ -7,13 +7,6 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=320&section=header&text=VARUN%20ADITYA&fontSize=90&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Information%20Science%20Engineer%20%40%20RVCE%20%E2%80%A2%20Bengaluru%2C%20India%20%F0%9F%87%AE%F0%9F%87%B3&descAlignY=62&descSize=20&descColor=a0c4ff"/>
 </div>
 
-<!-- ░░░░░░░░░░░░░░░░  TYPING ANIMATION  ░░░░░░░░░░░░░░░░ -->
-<div align="center">
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2500&pause=900&color=00D9FF&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=68&lines=🧠+AI+Engineer+%7C+Full-Stack+Architect+%7C+Systems+Thinker;⚡+Multi-Agent+AI+%7C+LLM+Pipelines+%7C+Edge+Intelligence;🏆+2nd+Place+VISISONICS+AI%2726+%C3%97+Hitachi+India+R%26D;📄+IEEE+%26+Scopus+Research+Author+%7C+NQComp-2026;🚀+Building+software+that+reasons+beyond+the+prompt" alt="Typing SVG"/>
-</a>
-</div>
-
 <br>
 
 <!-- ░░░░░░░░░░░░░░░░  SOCIAL BADGES  ░░░░░░░░░░░░░░░░ -->
@@ -101,7 +94,7 @@ class VarunAditya:
 </td>
 <td align="center" width="200">
 <img src="https://img.shields.io/badge/📚-Studying-6366F1?style=for-the-badge&logoColor=white"/><br>
-<sub><b>Mathematical Foundations for ML · NPTEL</b></sub>
+<sub><b>Mult-Agent Architectures</b></sub>
 </td>
 <td align="center" width="200">
 <img src="https://img.shields.io/badge/🎤-Mentoring-10B981?style=for-the-badge&logoColor=white"/><br>
