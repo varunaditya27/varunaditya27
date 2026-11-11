@@ -49,26 +49,25 @@ Hi, I'm Varun, an AI engineer and software developer in Bengaluru. I'm studying 
 
 <p align="center"><img src="assets/divider.svg" alt="Crime scene tape" width="100%"></p>
 
-<p align="center"><img src="assets/plate-record.svg" alt="Section 3. The priors: results and roles in date order." width="100%"></p>
+<p align="center"><img src="assets/plate-log.svg" alt="Section 3. The log: my latest public pushes, refreshed daily." width="100%"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/log.svg" alt="Evidence log of my latest public pushes, refreshed every day." width="100%"></p>
+
+<p align="center"><img src="assets/plate-record.svg" alt="Section 4. The priors: results and roles in date order." width="100%"></p>
 
 <p align="center"><img src="assets/record.svg" alt="Results and roles in date order, from the start of the degree in September 2024 to Vice President of Coding Club RVCE in 2026 to 2027." width="100%"></p>
 
-<p align="center"><img src="assets/plate-tools.svg" alt="Section 4. The kit: what the projects are built with." width="100%"></p>
+<p align="center"><img src="assets/plate-tools.svg" alt="Section 5. The kit: what the projects are built with." width="100%"></p>
 
 <p align="center"><img src="assets/stack.svg" alt="Tools used across the projects, grouped as languages, frameworks, AI and models, data and services, and systems and chains." width="100%"></p>
 
 <p align="center"><img src="assets/divider.svg" alt="Crime scene tape" width="100%"></p>
 
-<p align="center"><img src="assets/plate-activity.svg" alt="Section 5. The hunt: a year of commits." width="100%"></p>
+<p align="center"><img src="assets/plate-activity.svg" alt="Section 6. The hunt: a year of contributions as a crime scene." width="100%"></p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/snake-dark.svg">
-    <img alt="A snake eating through my GitHub contribution graph" src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/snake.svg" width="100%">
-  </picture>
-</p>
+<p align="center"><img src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/hunt.svg" alt="My contribution year as a crime scene: every day is a blood droplet, a UV lamp sweeps across and the droplets glow, and the five biggest days carry numbered evidence markers." width="100%"></p>
 
-<p align="center"><img src="assets/plate-contact.svg" alt="Section 6. Leave a message." width="100%"></p>
+<p align="center"><img src="assets/plate-contact.svg" alt="Section 7. Leave a message." width="100%"></p>
 
 <p align="center">
 <a href="mailto:varunaditya2706@gmail.com">varunaditya2706@gmail.com</a> &nbsp;|&nbsp;
