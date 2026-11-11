@@ -66,26 +66,25 @@ ${groups}
 
 <p align="center">${img('divider', alt.divider)}</p>
 
-${plate('plate-record', 'Section 3. The priors: results and roles in date order.')}
+${plate('plate-log', 'Section 3. The log: my latest public pushes, refreshed daily.')}
+
+<p align="center"><img src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/log.svg" alt="Evidence log of my latest public pushes, refreshed every day." width="100%"></p>
+
+${plate('plate-record', 'Section 4. The priors: results and roles in date order.')}
 
 <p align="center">${img('record', 'Results and roles in date order, from the start of the degree in September 2024 to Vice President of Coding Club RVCE in 2026 to 2027.')}</p>
 
-${plate('plate-tools', 'Section 4. The kit: what the projects are built with.')}
+${plate('plate-tools', 'Section 5. The kit: what the projects are built with.')}
 
 <p align="center">${img('stack', 'Tools used across the projects, grouped as languages, frameworks, AI and models, data and services, and systems and chains.')}</p>
 
 <p align="center">${img('divider', alt.divider)}</p>
 
-${plate('plate-activity', 'Section 5. The hunt: a year of commits.')}
+${plate('plate-activity', 'Section 6. The hunt: a year of contributions as a crime scene.')}
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/snake-dark.svg">
-    <img alt="A snake eating through my GitHub contribution graph" src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/snake.svg" width="100%">
-  </picture>
-</p>
+<p align="center"><img src="https://raw.githubusercontent.com/varunaditya27/varunaditya27/output/hunt.svg" alt="My contribution year as a crime scene: every day is a blood droplet, a UV lamp sweeps across and the droplets glow, and the five biggest days carry numbered evidence markers." width="100%"></p>
 
-${plate('plate-contact', 'Section 6. Leave a message.')}
+${plate('plate-contact', 'Section 7. Leave a message.')}
 
 <p align="center">
 <a href="mailto:varunaditya2706@gmail.com">varunaditya2706@gmail.com</a> &nbsp;|&nbsp;

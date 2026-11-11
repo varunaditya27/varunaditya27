@@ -1,147 +1,10 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import * as fontkit from 'fontkit';
-import wawoff2 from 'wawoff2';
+import { writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import * as icons from 'simple-icons';
 import * as kit from './kit/iso-kit.mjs';
 import { labFigure, labCss } from './lab.mjs';
-
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = join(ROOT, 'assets');
-mkdirSync(OUT, { recursive: true });
-
-const DATA = JSON.parse(readFileSync(join(ROOT, 'data/projects.json'), 'utf8'));
-const portrait = readFileSync(join(ROOT, 'assets/portrait.jpg')).toString('base64');
-
-/* Paper, ink and blood. The night scene swaps paper for black and blood for what luminol finds. */
-const C = {
-  paper: '#eadfc6', manila: '#ffdba9', ink: '#1b0409', ink2: '#4a2a2e',
-  blood: '#e4062a', deep: '#b3001b', arterial: '#7a0b16', hot: '#ff3b57', void: '#07090a', cabinet: '#120709', bone: '#fff1ea',
-  bone2: '#ead3ca', bone3: '#b99d95', luminol: '#a9e6ff', sun: '#ffc524',
-};
-
-/* Same seed, same splash, so a rebuild never changes the art. */
-const rng = (seed) => { let s = seed >>> 0; return () => ((s = (Math.imul(s, 1664525) + 1013904223) >>> 0) / 4294967296); };
-const seedOf = (str) => [...str].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
-const r1 = (n) => Math.round(n * 10) / 10;
-const r2 = (n) => Math.round(n * 100) / 100;
-
-/** Blood spatter: one heavy impact, then droplets thrown outward, the far ones stretched into streaks. */
-function spatter(cx, cy, seed, { n = 90, reach = 340, angle = 0, cone = 2.4, big = 15, fill = C.deep } = {}) {
-  const rand = rng(seed);
-  const out = [];
-  const blob = Array.from({ length: 14 }, (_, i) => {
-    const a = (i / 14) * Math.PI * 2, rr = big * (0.78 + rand() * 0.5);
-    return [cx + Math.cos(a) * rr, cy + Math.sin(a) * rr];
-  });
-  out.push(`<path d="M${blob.map(([x, y]) => `${r1(x)} ${r1(y)}`).join(' L')}Z" fill="${fill}" stroke="${fill}" stroke-width="4" stroke-linejoin="round"/>`);
-  for (let i = 0; i < n; i++) {
-    const dist = reach * Math.pow(rand(), 1.5) + big;
-    const a = angle + (rand() - 0.5) * cone;
-    const x = cx + Math.cos(a) * dist, y = cy + Math.sin(a) * dist;
-    const size = Math.max(0.9, (1 - dist / (reach + big)) * 8 * (0.4 + rand()));
-    if (dist > reach * 0.35 && rand() > 0.35) {
-      out.push(`<ellipse cx="${r1(x)}" cy="${r1(y)}" rx="${r1(size * (2 + rand() * 2.4))}" ry="${r1(size * 0.75)}" transform="rotate(${r1((a * 180) / Math.PI)} ${r1(x)} ${r1(y)})" fill="${fill}"/>`);
-    } else out.push(`<circle cx="${r1(x)}" cy="${r1(y)}" r="${r1(size)}" fill="${fill}"/>`);
-  }
-  return out.join('');
-}
-
-/* fontkit cannot build a variable instance from a WOFF2 wrapper, so each font is unpacked to plain TrueType first. */
-const load = async (name) => fontkit.create(Buffer.from(await wawoff2.decompress(readFileSync(join(ROOT, 'tools/fonts', name)))));
-const fonts = {
-  title: await load('climate-crisis-latin-full-normal.woff2'),
-  body: await load('atkinson-hyperlegible-next-latin-wght-normal.woff2'),
-  type: await load('courier-prime-latin-400-normal.woff2'),
-  typeBold: await load('courier-prime-latin-700-normal.woff2'),
-};
-/** A face is a font plus an optional variable-axis setting: Climate Crisis melts with the year, Atkinson has weight. */
-const face = (font, vary = null) => ({ font, vary, vf: vary ? font.getVariation(vary) : null, key: font.postscriptName + (vary ? JSON.stringify(vary) : '') });
-const TITLE = (year = 1979) => face(fonts.title, { YEAR: year });
-const BODY = (wght = 400) => face(fonts.body, { wght });
-const TYPE = face(fonts.type);
-const TYPEB = face(fonts.typeBold);
-
-const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-
-/**
- * Text as vector outlines, because an SVG shown through <img> cannot load web fonts. Each glyph is stored once in <defs>
- * and reused, which keeps a page of text to a few kilobytes.
- */
-class Doc {
-  constructor(w, h, label) {
-    this.w = w; this.h = h; this.label = label;
-    this.glyphs = new Map(); this.defs = []; this.body = []; this.css = ''; this.n = 0;
-  }
-  id(p = 'x') { return `${p}${++this.n}`; }
-  adv(f, glyph, pos) { return f.vf ? f.vf.getGlyph(glyph.id).advanceWidth : pos.xAdvance; }
-  measure(f, str, size, track = 0) {
-    const run = f.font.layout(str);
-    const s = size / f.font.unitsPerEm;
-    return run.glyphs.reduce((w, g, i) => w + this.adv(f, g, run.positions[i]) * s, 0) + track * Math.max(0, run.glyphs.length - 1);
-  }
-  text(f, str, x, y, size, { fill = C.ink, anchor = 'start', track = 0, extra = '' } = {}) {
-    const run = f.font.layout(str);
-    const s = size / f.font.unitsPerEm;
-    const width = this.measure(f, str, size, track);
-    let cx = anchor === 'middle' ? x - width / 2 : anchor === 'end' ? x - width : x;
-    const uses = [];
-    run.glyphs.forEach((glyph, i) => {
-      const pos = run.positions[i];
-      const shape = f.vf ? f.vf.getGlyph(glyph.id).path : glyph.path;
-      if (shape.commands.length) {
-        const key = `${f.key}|${glyph.id}`;
-        let gid = this.glyphs.get(key);
-        if (!gid) {
-          gid = this.id('g');
-          this.glyphs.set(key, gid);
-          this.defs.push(`<path id="${gid}" d="${shape.transform(1, 0, 0, -1, 0, 0).toSVG()}"/>`);
-        }
-        uses.push(`<use href="#${gid}" x="${r2((cx + pos.xOffset * s) / s)}" y="${r2((y - pos.yOffset * s) / s)}"/>`);
-      }
-      cx += this.adv(f, glyph, pos) * s + track;
-    });
-    return `<g fill="${fill}" transform="scale(${Math.round(s * 1e5) / 1e5})" ${extra}>${uses.join('')}</g>`;
-  }
-  wrap(f, str, size, maxW) {
-    const lines = [];
-    let line = '';
-    for (const w of str.split(' ')) {
-      const next = line ? `${line} ${w}` : w;
-      if (this.measure(f, next, size) > maxW && line) { lines.push(line); line = w; } else line = next;
-    }
-    if (line) lines.push(line);
-    return lines;
-  }
-  add(s) { this.body.push(s); }
-  svg() {
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${this.w} ${this.h}" width="${this.w}" height="${this.h}" role="img" aria-label="${esc(this.label)}">
-<title>${esc(this.label)}</title>
-<defs>${this.defs.join('')}</defs>
-<style>${this.css}</style>
-${this.body.join('\n')}
-</svg>
-`;
-  }
-  write(name) { const s = this.svg(); writeFileSync(join(OUT, name), s); console.log(name.padEnd(26), (s.length / 1024).toFixed(1) + ' KB'); }
-}
-
-/* Motion stops under reduced motion and the final frame shows. */
-const still = (sel) => `@media (prefers-reduced-motion: reduce){${sel}{animation:none !important}}`;
-
-/** Torn paper edge, ink roughness and paper grain, shared by every sheet. */
-const paperDefs = (d) => {
-  d.defs.push(`<filter id="torn" x="-2%" y="-4%" width="104%" height="108%"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
-<filter id="ink" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.7"/></filter>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="11"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .22  0 0 0 0 .1  0 0 0 .22 0"/></filter>
-<filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>`);
-};
-const grain = (w, h) => `<rect width="${w}" height="${h}" filter="url(#grain)" opacity=".55"/>`;
-
-const dripCss = `.dr{transform-box:fill-box;transform-origin:50% 0;animation:fall 6s cubic-bezier(.6,0,.4,1) infinite}@keyframes fall{0%{transform:scaleY(0)}35%{transform:scaleY(1)}70%{transform:scaleY(1)}100%{transform:scaleY(0)}}`;
-const dripEl = (x, y0, h, delay, dur, fill = C.blood, w = 8) =>
-  `<g class="dr" style="animation-delay:${delay}s;animation-duration:${dur}s"><rect x="${x - w / 2}" y="${y0}" width="${w}" height="${h}" fill="${fill}"/><circle cx="${x}" cy="${y0 + h}" r="${w * 1.06}" fill="${fill}"/><ellipse cx="${x - w * 0.3}" cy="${y0 + h - 2}" rx="${w * 0.25}" ry="${w * 0.42}" fill="#fff" opacity=".45"/></g>`;
+import { scene } from './scenes.mjs';
+import { ROOT, OUT, DATA, portrait, C, rng, seedOf, r1, r2, spatter, fonts, face, TITLE, BODY, TYPE, TYPEB, esc, Doc, still, paperDefs, grain, dripCss, dripEl } from './lib.mjs';
 
 /* ------------------------------------------------------------------ hero */
 function hero() {
@@ -149,15 +12,22 @@ function hero() {
   const d = new Doc(W, H, 'Varun Aditya, AI engineer and software developer in Bengaluru. A forensic lab bench: a box of blood slides, a microscope, a laptop running code, a lamp. The lights go out and the blood glows.');
   paperDefs(d);
   d.css = `
-.night{animation:lights 18s linear infinite}
-@keyframes lights{0%,34%{opacity:0}35%{opacity:.4}36%{opacity:0}37%{opacity:.85}38%{opacity:.15}40%,90%{opacity:1}91%{opacity:.3}92%{opacity:1}94%{opacity:.5}96%,100%{opacity:0}}
+.night{animation:lights 40s linear infinite}
+@keyframes lights{0%,28%{opacity:0}28.6%{opacity:.4}29.2%{opacity:0}29.8%{opacity:.85}30.4%{opacity:.15}31%,80%{opacity:1}80.8%{opacity:.3}81.5%{opacity:1}82.6%{opacity:.5}84%,100%{opacity:0}}
+.lens{animation:lens 40s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes lens{0%,11%{opacity:0;transform:scale(.6)}14%,25%{opacity:1;transform:scale(1)}27.5%,100%{opacity:0;transform:scale(.6)}}
+.mag{animation:mag 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes mag{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.reveal{animation:reveal 40s infinite}
+@keyframes reveal{0%,32%{clip-path:inset(0 0 0 100%)}52%,100%{clip-path:inset(0 0 0 0)}}
+.beam{animation:beam 40s infinite;transform-origin:783px 432px}
+@keyframes beam{0%,32%{opacity:0;transform:scaleX(.05)}34%{opacity:1;transform:scaleX(.05)}52%{opacity:1;transform:scaleX(1)}58%,100%{opacity:0;transform:scaleX(1)}}
 ${dripCss}
 .bar{animation:slide 24s linear infinite}@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-420px)}}
 .pulse{animation:pulse 3.4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.75}50%{opacity:1}}
-${still('.night,.dr,.bar,.pulse')}@media (prefers-reduced-motion: reduce){.night{opacity:1}.dr{transform:scaleY(1)}}
+${still('.night,.dr,.bar,.pulse,.lens,.mag,.reveal,.beam')}@media (prefers-reduced-motion: reduce){.night{opacity:1}.dr{transform:scaleY(1)}.lens,.beam{opacity:0}.reveal{clip-path:none}}
 ${kit.ISO_CSS}${labCss()}`;
   d.defs.push(`<g id="lab">${labFigure().body}</g>`);
-  d.defs.push(`<clipPath id="frame"><rect width="${W}" height="${H}" rx="14"/></clipPath>`);
+  d.defs.push(`<clipPath id="frame"><rect width="${W}" height="${H}" rx="14"/></clipPath><linearGradient id="beamg" gradientUnits="userSpaceOnUse" x1="783" y1="0" x2="-40" y2="0"><stop offset="0" stop-color="#8f6bff" stop-opacity=".34"/><stop offset="1" stop-color="#6b3dff" stop-opacity="0"/></linearGradient>`);
 
   const S = 0.88;
   const LX = 346, LY = 138;
@@ -175,6 +45,11 @@ ${kit.ISO_CSS}${labCss()}`;
     /* the splash on the wall behind the bench; at night the same splash is what luminol finds */
     g.push(`<g opacity=".92" ${night ? '' : 'filter="url(#ink)"'}>${spatter(930, 215, 1117, { n: 190, reach: 640, angle: Math.PI * 0.84, cone: 2.1, big: 24, fill: night ? C.luminol : C.arterial })}</g>`);
     if (night) g.push(`<g opacity=".5" filter="url(#soft)">${spatter(930, 215, 1117, { n: 190, reach: 640, angle: Math.PI * 0.84, cone: 2.1, big: 24, fill: C.luminol })}</g>`);
+    if (night) {
+      /* stains the day scene hides: only the lamp sweep finds them */
+      g.push(`<g class="reveal"><g opacity=".85">${spatter(130, 585, 9001, { n: 70, reach: 200, angle: -0.5, cone: 1.8, big: 12, fill: C.luminol })}${spatter(615, 655, 9002, { n: 44, reach: 130, angle: -1.6, cone: 2, big: 8, fill: C.luminol })}${spatter(330, 190, 9003, { n: 40, reach: 120, angle: 0.4, cone: 2.4, big: 8, fill: C.luminol })}</g></g>`);
+      g.push(`<g class="beam"><polygon points="783,432 -40,300 -40,640" fill="url(#beamg)"/></g>`);
+    }
     g.push(`<g transform="translate(${LX} ${LY}) scale(${S})"><g class="iso lab-${night ? 'night' : 'day'}"><use href="#lab"/></g></g>`);
     const f = TITLE(night ? 2034 : 1979);
     g.push(d.text(f, 'VARUN ADITYA', 46, baseY, nameSize, { fill: ink }));
@@ -187,6 +62,8 @@ ${kit.ISO_CSS}${labCss()}`;
     return g.join('');
   };
   d.add(`<g clip-path="url(#frame)">${scene(false)}<g class="night">${scene(true)}</g>`);
+  d.defs.push(`<clipPath id="lensclip"><circle cx="880" cy="238" r="60"/></clipPath>`);
+  d.add(`<g class="lens"><circle cx="880" cy="238" r="66" fill="#2b2118"/><circle cx="880" cy="238" r="60" fill="#1a0508"/><g clip-path="url(#lensclip)"><g class="mag">${spatter(868, 246, 4242, { n: 22, reach: 70, angle: -0.6, cone: 2.2, big: 17, fill: '#b3001b' })}<ellipse cx="868" cy="246" rx="9" ry="12" fill="#ff3b57" opacity=".35"/></g><path d="M820 238 h120 M880 178 v120" stroke="#fff1ea" stroke-opacity=".25" stroke-width="1"/></g><circle cx="880" cy="238" r="63" fill="none" stroke="#c9a136" stroke-width="7"/><path d="M924 282 l26 26" stroke="#c9a136" stroke-width="9" stroke-linecap="round"/></g>`);
   d.add(`<g transform="translate(180 622) rotate(-7)" filter="url(#ink)" class="pulse"><rect x="-96" y="-27" width="192" height="54" rx="6" fill="none" stroke="${C.deep}" stroke-width="4"/>${d.text(BODY(800), 'Open file', 0, 11, 32, { fill: C.deep, anchor: 'middle', track: 1 })}</g>`);
   d.add(`<g transform="rotate(-1.2 500 700)"><rect x="-20" y="676" width="1040" height="40" fill="${C.sun}"/><rect x="-20" y="676" width="1040" height="4" fill="${C.ink}"/><rect x="-20" y="712" width="1040" height="4" fill="${C.ink}"/><g class="bar">${d.text(TYPEB, 'CRIME SCENE  DO NOT CROSS  '.repeat(12), 0, 702, 17, { fill: C.ink, track: 2 })}</g></g></g>`);
   d.add(`<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="13" fill="none" stroke="${C.ink}" stroke-opacity=".55" stroke-width="2"/>`);
@@ -228,11 +105,14 @@ function subject() {
   const W = 1000, H = 520;
   const d = new Doc(W, H, 'Subject file. Varun Aditya, living in Bengaluru, studying Information Science and Engineering at RV College of Engineering, Vice President of Coding Club RVCE. At the moment learning event-driven systems and Kubernetes, and preparing for Google Summer of Code 2027.');
   paperDefs(d);
-  d.css = `.row{opacity:0;animation:typed .7s ease-out forwards}@keyframes typed{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
-.stamp{opacity:0;transform-box:fill-box;transform-origin:center;animation:stamp .5s cubic-bezier(.2,1.6,.4,1) 2.6s forwards}@keyframes stamp{from{opacity:0;transform:scale(2.2) rotate(-18deg)}to{opacity:1;transform:scale(1) rotate(-10deg)}}
+  const T = 15;
+  const rowCss = [0, 1, 2, 3, 4].map((i) => { const a0 = 4 + i * 8; return `.r${i}{animation:r${i} ${T}s infinite}@keyframes r${i}{0%,${a0}%{opacity:0;transform:translateX(-14px)}${a0 + 4}%,100%{opacity:1;transform:none}}`; }).join('');
+  d.css = `${rowCss}.cyc{animation:cyc ${T}s infinite}@keyframes cyc{0%,88%{opacity:1}95%,100%{opacity:0}}
+.stamp{animation:stamp ${T}s infinite}@keyframes stamp{0%,50%{opacity:0;transform:scale(2.2) rotate(-18deg)}54%,100%{opacity:1;transform:scale(1) rotate(-10deg)}}
+.stamp{transform-box:fill-box;transform-origin:center}
 .cur{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 .sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 6s ease-in-out infinite}@keyframes sway{0%,100%{transform:rotate(-.8deg)}50%{transform:rotate(.8deg)}}
-${still('.row,.stamp,.cur,.sway')}@media (prefers-reduced-motion: reduce){.row,.stamp{opacity:1}.stamp{transform:rotate(-10deg)}}`;
+${still('.cyc,.r0,.r1,.r2,.r3,.r4,.stamp,.cur,.sway')}@media (prefers-reduced-motion: reduce){.stamp{opacity:1;transform:rotate(-10deg)}}`;
   d.defs.push(`<clipPath id="c"><rect width="${W}" height="${H}" rx="14"/></clipPath><clipPath id="ph"><rect x="-84" y="-84" width="168" height="168" rx="3"/></clipPath>
 <filter id="sh" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#000" flood-opacity=".55"/></filter>`);
   d.add(`<g clip-path="url(#c)"><rect width="${W}" height="${H}" fill="${C.cabinet}"/>`);
@@ -251,10 +131,10 @@ ${still('.row,.stamp,.cur,.sway')}@media (prefers-reduced-motion: reduce){.row,.
     const lines = d.wrap(BODY(420), v, 19, 420);
     let g = d.text(BODY(780), k, 60, y, 15.5, { fill: C.deep });
     lines.forEach((ln, j) => { g += d.text(BODY(430), ln, 196, y + j * 25, 19, { fill: C.ink }); });
-    d.add(`<g class="row" style="animation-delay:${0.3 + i * 0.45}s">${g}<rect x="60" y="${y + (lines.length - 1) * 25 + 13}" width="590" height="1.4" fill="${C.ink}" opacity=".16"/></g>`);
+    d.add(`<g class="cyc"><g class="r${i}">${g}<rect x="60" y="${y + (lines.length - 1) * 25 + 13}" width="590" height="1.4" fill="${C.ink}" opacity=".16"/></g></g>`);
     y += lines.length * 25 + 28; i++;
   }
-  d.add(`<g transform="translate(596 108)"><g class="stamp" filter="url(#ink)"><rect x="-86" y="-26" width="172" height="52" rx="5" fill="none" stroke="${C.deep}" stroke-width="4"/>${d.text(BODY(800), 'Case open', 0, 10, 29, { fill: C.deep, anchor: 'middle', track: 1 })}</g></g>`);
+  d.add(`<g transform="translate(596 108)"><g class="cyc"><g class="stamp" filter="url(#ink)"><rect x="-86" y="-26" width="172" height="52" rx="5" fill="none" stroke="${C.deep}" stroke-width="4"/>${d.text(BODY(800), 'Case open', 0, 10, 29, { fill: C.deep, anchor: 'middle', track: 1 })}</g></g></g>`);
   d.add(`<g transform="translate(838 230) rotate(4)" filter="url(#sh)"><g class="sway"><rect x="-100" y="-114" width="200" height="236" fill="${C.paper}"/><g transform="translate(0 -12)"><g clip-path="url(#ph)"><image href="data:image/jpeg;base64,${portrait}" x="-84" y="-84" width="168" height="168" preserveAspectRatio="xMidYMid slice"/></g></g>${d.text(BODY(700), 'Varun', 0, 104, 22, { fill: C.ink, anchor: 'middle' })}<rect x="-36" y="-126" width="72" height="26" fill="${C.sun}" opacity=".92" transform="rotate(-3)"/></g></g>`);
   d.add(`<rect x="36" y="446" width="928" height="50" rx="4" fill="${C.void}"/>`);
   const quote = 'Build systems that reason. Not tools that respond.';
@@ -272,7 +152,7 @@ const HOOK = {
   nyayasetu: 'Photograph a legal document and get it back in plain English, Kannada or Hindi, with risky clauses flagged and the statute cited.',
 };
 function card(p, index) {
-  const W = 480, H = 360;
+  const W = 480, H = 500;
   const chapter = DATA.chapters[p.chapter] ?? p.chapter;
   const d = new Doc(W, H, `Case file ${index + 1}: ${p.name}. ${HOOK[p.id]}`);
   paperDefs(d);
@@ -281,14 +161,15 @@ function card(p, index) {
   d.add(`<rect width="${W}" height="${H}" fill="${C.cabinet}"/><g clip-path="url(#c)">`);
   d.add(`<g filter="url(#torn)"><rect x="14" y="14" width="${W - 28}" height="${H - 28}" fill="${C.paper}"/></g>`);
   d.add(`<g transform="translate(14 14)">${grain(W - 28, H - 28)}</g>`);
-  d.add(`<g opacity=".92" filter="url(#ink)">${spatter(W - 40, 26, seedOf(p.id), { n: 56, reach: 160, angle: Math.PI * (0.66 + index * 0.04), cone: 1.1, big: 10, fill: C.arterial })}</g>`);
-  d.add(d.text(BODY(760), `Case ${String(index + 1).padStart(2, '0')}`, 34, 52, 16, { fill: C.deep }));
-  d.add(d.text(BODY(480), `${chapter}, ${p.year}`, 34, 74, 15, { fill: C.ink2 }));
-  let size = 52;
+  d.add(`<g opacity=".9" filter="url(#ink)">${spatter(W - 60, 52, seedOf(p.id), { n: 46, reach: 190, angle: Math.PI * (0.52 + index * 0.05), cone: 1.4, big: 14, fill: C.arterial })}</g>`);
+  d.add(scene(d, p.id, 32, 32, W - 64, 156));
+  d.add(d.text(BODY(760), `Case ${String(index + 1).padStart(2, '0')}`, 34, 222, 16, { fill: C.deep }));
+  d.add(d.text(BODY(480), `${chapter}, ${p.year}`, 100, 222, 15, { fill: C.ink2 }));
+  let size = 50;
   while (d.measure(TITLE(1990), p.name, size) > W - 68 - 40 && size > 22) size -= 2;
-  d.add(d.text(TITLE(1990), p.name, 32, 138, size, { fill: C.ink }));
-  d.add(d.text(BODY(720), p.kind, 34, 170, 16.5, { fill: C.deep }));
-  d.wrap(BODY(440), HOOK[p.id], 17.5, W - 76).forEach((ln, i) => d.add(d.text(BODY(440), ln, 34, 202 + i * 25, 17.5, { fill: C.ink })));
+  d.add(d.text(TITLE(1990), p.name, 32, 280, size, { fill: C.ink }));
+  d.add(d.text(BODY(720), p.kind, 34, 312, 16.5, { fill: C.deep }));
+  d.wrap(BODY(440), HOOK[p.id], 17.5, W - 76).forEach((ln, i) => d.add(d.text(BODY(440), ln, 34, 344 + i * 25, 17.5, { fill: C.ink })));
   let x = 34;
   for (const s of p.stack.slice(0, 4)) {
     const w = d.measure(BODY(560), s, 13.5) + 22;
@@ -351,13 +232,15 @@ function record() {
   const d = new Doc(W, H, `The record, in date order. ${RECORD.map(([w, t, x]) => `${w}: ${t}. ${x}`).join(' ')}`);
   paperDefs(d);
   const total = (RECORD.length - 1) * STEP;
-  d.css = `.line{stroke-dasharray:${total};stroke-dashoffset:${total};animation:draw 3.4s ease-out .2s forwards}@keyframes draw{to{stroke-dashoffset:0}}
-.n{opacity:0;animation:on .5s ease-out forwards}@keyframes on{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+  const T = 18;
+  const nodeCss = RECORD.map((_, i) => { const a0 = 3 + i * 8; return `.q${i}{animation:q${i} ${T}s infinite}@keyframes q${i}{0%,${a0}%{opacity:0;transform:translateX(-10px)}${a0 + 3}%,100%{opacity:1;transform:none}}`; }).join('');
+  d.css = `.line{stroke-dasharray:${total};animation:draw ${T}s infinite}@keyframes draw{0%{stroke-dashoffset:${total}}62%,100%{stroke-dashoffset:0}}
+${nodeCss}.cyc{animation:cyc ${T}s infinite}@keyframes cyc{0%,90%{opacity:1}96%,100%{opacity:0}}
 .ping{transform-box:fill-box;transform-origin:center;animation:ping 3s ease-out infinite}@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(3);opacity:0}}
-${still('.line,.n,.ping')}@media (prefers-reduced-motion: reduce){.line{stroke-dashoffset:0}.n{opacity:1}}`;
+${still('.line,.cyc,.ping,'+RECORD.map((_, i) => '.q' + i).join(','))}@media (prefers-reduced-motion: reduce){.line{stroke-dashoffset:0}}`;
   d.defs.push(`<clipPath id="c"><rect width="${W}" height="${H}" rx="14"/></clipPath>`);
   d.add(`<rect width="${W}" height="${H}" fill="${C.cabinet}"/><g clip-path="url(#c)"><g filter="url(#torn)"><rect x="20" y="20" width="${W - 40}" height="${H - 40}" fill="${C.paper}"/></g><g transform="translate(20 20)">${grain(W - 40, H - 40)}</g>`);
-  d.add(`<path class="line" d="M${LX} ${TOP} V${TOP + total}" stroke="${C.deep}" stroke-width="3.5" fill="none" stroke-linecap="round"/>`);
+  d.add(`<g class="cyc"><path class="line" d="M${LX} ${TOP} V${TOP + total}" stroke="${C.deep}" stroke-width="3.5" fill="none" stroke-linecap="round"/>`);
   RECORD.forEach(([when, head, body], i) => {
     const y = TOP + i * STEP;
     const hot = i === 2 || i === 3 || i === 6;
@@ -367,9 +250,9 @@ ${still('.line,.n,.ping')}@media (prefers-reduced-motion: reduce){.line{stroke-d
     if (hot) g += `<circle class="ping" cx="${LX}" cy="${y}" r="9" fill="none" stroke="${C.blood}" stroke-width="2" style="animation-delay:${i * 0.4}s"/>`;
     g += d.text(BODY(760), head, LX + 30, y + 6, 22, { fill: C.ink });
     lines.forEach((ln, j) => { g += d.text(BODY(430), ln, LX + 30, y + 31 + j * 22, 16.5, { fill: C.ink2 }); });
-    d.add(`<g class="n" style="animation-delay:${0.4 + i * 0.4}s">${g}</g>`);
+    d.add(`<g class="q${i}">${g}</g>`);
   });
-  d.add(`</g>`);
+  d.add(`</g></g>`);
   d.write('record.svg');
 }
 
@@ -392,10 +275,11 @@ hero();
 divider();
 plate('plate-subject.svg', '01', 'PERSON OF INTEREST', 311);
 plate('plate-cases.svg', '02', 'OPEN CASES', 421);
-plate('plate-record.svg', '03', 'THE PRIORS', 533);
-plate('plate-tools.svg', '04', 'THE KIT', 647);
-plate('plate-activity.svg', '05', 'THE HUNT', 759);
-plate('plate-contact.svg', '06', 'LEAVE A MESSAGE', 863);
+plate('plate-log.svg', '03', 'THE LOG', 487);
+plate('plate-record.svg', '04', 'THE PRIORS', 533);
+plate('plate-tools.svg', '05', 'THE KIT', 647);
+plate('plate-activity.svg', '06', 'THE HUNT', 759);
+plate('plate-contact.svg', '07', 'LEAVE A MESSAGE', 863);
 subject();
 DATA.selected.forEach((id, i) => card(DATA.projects.find((p) => p.id === id), i));
 stack();
