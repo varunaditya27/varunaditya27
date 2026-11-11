@@ -1,0 +1,580 @@
+{
+ "projects": [
+  {
+   "id": "nova-ai",
+   "name": "Nova AI",
+   "year": "2026",
+   "chapter": "companions",
+   "kind": "Local companion with long-term memory",
+   "line": "A companion that keeps one long conversation going, remembers what matters about you and runs entirely on your own machine.",
+   "stack": [
+    "Python",
+    "TypeScript",
+    "FastAPI",
+    "Next.js 16",
+    "PostgreSQL",
+    "ChromaDB",
+    "Ollama",
+    "Qwen 2.5",
+    "Gemma 2",
+    "Kokoro",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "phire",
+   "name": "PHIRE",
+   "year": "2026",
+   "chapter": "care",
+   "kind": "Local health assistant",
+   "line": "A health assistant that runs on your own machine and traces every claim it makes to the record behind it.",
+   "stack": [
+    "Next.js 16",
+    "React 19",
+    "FastAPI",
+    "Python 3.12",
+    "Ollama",
+    "Chroma",
+    "Neo4j",
+    "PostgreSQL",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "ayushbot",
+   "name": "AyushBot",
+   "year": "2026",
+   "chapter": "care",
+   "kind": "Sensor kit, tablet app and edge gateway",
+   "line": "An offline triage kit for community health workers: a vitals sensor pack, a tablet app, and a Raspberry Pi in the health centre running a local model.",
+   "stack": [
+    "Kotlin",
+    "Jetpack Compose",
+    "ESP32",
+    "C++",
+    "MQTT",
+    "FastAPI",
+    "LangGraph",
+    "FAISS",
+    "llama.cpp",
+    "XGBoost",
+    "Flower"
+   ],
+   "repo": true
+  },
+  {
+   "id": "sahaai",
+   "name": "SahaAI",
+   "year": "2025",
+   "chapter": "care",
+   "kind": "Android app, caregiver dashboard and API",
+   "line": "A voice-first companion for elderly users, with a dashboard for the people who look after them.",
+   "stack": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Room",
+    "React 19",
+    "Vite",
+    "FastAPI",
+    "Prisma",
+    "PostgreSQL",
+    "Gemini",
+    "Groq"
+   ],
+   "repo": true
+  },
+  {
+   "id": "allersafe",
+   "name": "AllerSafe",
+   "year": "2025",
+   "chapter": "care",
+   "kind": "Flutter app and API",
+   "line": "Scan an ingredient label and find out whether it is safe for your allergies.",
+   "stack": [
+    "Flutter",
+    "FastAPI",
+    "Supabase",
+    "OCR",
+    "NLP"
+   ],
+   "repo": true
+  },
+  {
+   "id": "tracenet",
+   "name": "TraceNet",
+   "year": "2026",
+   "chapter": "care",
+   "kind": "Graph algorithms study",
+   "line": "Antibiotic resistance modelled as a graph: where it spreads, which communities are most exposed, and where containment should start.",
+   "stack": [
+    "Python",
+    "C++",
+    "TypeScript",
+    "Next.js",
+    "Graph algorithms",
+    "CARD resistance data"
+   ],
+   "repo": true
+  },
+  {
+   "id": "nyayasetu",
+   "name": "NyayaSetu",
+   "year": "2026",
+   "chapter": "trust",
+   "kind": "Android app and AI backend",
+   "line": "Photograph a legal document and get it back in plain English, Kannada or Hindi, with the risky clauses flagged and the statute cited.",
+   "stack": [
+    "Kotlin",
+    "Jetpack Compose",
+    "FastAPI",
+    "Gemma 3",
+    "Mistral OCR",
+    "IndicTrans2",
+    "ChromaDB",
+    "Indian Kanoon"
+   ],
+   "repo": true
+  },
+  {
+   "id": "walletmind",
+   "name": "WalletMind",
+   "year": "2025",
+   "chapter": "trust",
+   "kind": "Web app, agent backend and smart contracts",
+   "line": "A wallet for AI agents that writes down every decision on-chain before the agent acts on it.",
+   "stack": [
+    "Next.js",
+    "FastAPI",
+    "LangChain",
+    "Solidity",
+    "Hardhat",
+    "Viem",
+    "IPFS"
+   ],
+   "repo": true
+  },
+  {
+   "id": "neuramark",
+   "name": "NeuraMark",
+   "year": "2025",
+   "chapter": "trust",
+   "kind": "Web app and smart contracts",
+   "line": "Prove that you generated a specific AI output, from a particular prompt and model, at a particular time.",
+   "stack": [
+    "Solidity",
+    "Ethereum Sepolia",
+    "ERC-721",
+    "W3C DID and VC",
+    "IPFS",
+    "Gemini"
+   ],
+   "repo": true
+  },
+  {
+   "id": "neuroadapt",
+   "name": "NeuroAdapt",
+   "year": "2026",
+   "chapter": "learning",
+   "kind": "Adaptive learning web app",
+   "line": "A learning app that notices when a student is struggling and changes the lesson, with no diagnosis required.",
+   "stack": [
+    "Next.js",
+    "FastAPI",
+    "PennyLane",
+    "Double DQN",
+    "LLaMA-3",
+    "Stable Diffusion",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "learnmate-ai",
+   "name": "LearnMate AI",
+   "year": "2025",
+   "chapter": "learning",
+   "kind": "Web app",
+   "line": "A self-learning companion that generates a learning path for any skill, measures focus and rewards consistency.",
+   "stack": [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Gemini",
+    "Firebase",
+    "Tailwind CSS 4"
+   ],
+   "repo": true
+  },
+  {
+   "id": "edusynth",
+   "name": "EduSynth",
+   "year": "2025",
+   "chapter": "learning",
+   "kind": "Lesson generator",
+   "line": "Give it a topic and it returns a narrated, animated lesson you can export as a video, a PDF or slides.",
+   "stack": [
+    "Next.js 16",
+    "FastAPI",
+    "Gemini",
+    "ElevenLabs",
+    "React Flow",
+    "Groq",
+    "MoviePy",
+    "Supabase"
+   ],
+   "repo": true
+  },
+  {
+   "id": "indra",
+   "name": "INDRA",
+   "year": "2026",
+   "chapter": "grid",
+   "kind": "Grid monitoring dashboard",
+   "line": "Turns raw three-phase waveforms from a substation into plain-language guidance for the operator, in the seconds the operator has to act.",
+   "stack": [
+    "Next.js 16",
+    "FastAPI",
+    "TensorFlow",
+    "XGBoost",
+    "pandapower",
+    "ChromaDB",
+    "Gemma-4",
+    "PostgreSQL",
+    "WebSocket"
+   ],
+   "repo": true
+  },
+  {
+   "id": "ai-zero-day",
+   "name": "Zero-Day Detector",
+   "year": "2025",
+   "chapter": "grid",
+   "kind": "Security analytics pipeline",
+   "line": "Catches attacks nobody has seen before by learning what normal looks like and flagging what departs from it.",
+   "stack": [
+    "Python",
+    "PyTorch",
+    "LSTM autoencoder",
+    "GNN",
+    "Sysmon",
+    "tshark",
+    "FastAPI"
+   ],
+   "repo": true
+  },
+  {
+   "id": "sentinel",
+   "name": "Sentinel Orchestrator Network",
+   "year": "2025",
+   "chapter": "grid",
+   "kind": "Multi-agent system for Cardano",
+   "line": "AI agents that check a Cardano policy for fraud and return a verdict with a PDF report.",
+   "stack": [
+    "Cardano",
+    "Hydra",
+    "Blockfrost",
+    "Koios",
+    "Python",
+    "FastAPI"
+   ],
+   "repo": true
+  },
+  {
+   "id": "campus-copilot",
+   "name": "Campus Copilot",
+   "year": "2026",
+   "chapter": "agents",
+   "kind": "Campus assistant with web app and API",
+   "line": "A campus assistant that answers from the college’s own documents, does exact work with ordinary code, and changes a student’s data only after they say yes.",
+   "stack": [
+    "Python",
+    "FastAPI",
+    "LangGraph",
+    "Next.js",
+    "TypeScript",
+    "Chroma",
+    "Qdrant",
+    "Groq",
+    "PostgreSQL",
+    "SQLite",
+    "Celery",
+    "Redis",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "orka",
+   "name": "ORKA",
+   "year": "2026",
+   "chapter": "agents",
+   "kind": "Android app with an on-device model",
+   "line": "An Android task app whose reminders are full-screen alarms with Start, Done and Dismiss, backed by a language model running on the phone.",
+   "stack": [
+    "Kotlin",
+    "Room",
+    "AlarmManager",
+    "LiteRT-LM",
+    "Gemma 4 E4B"
+   ],
+   "repo": true
+  },
+  {
+   "id": "june-assistant",
+   "name": "June Assistant",
+   "year": "2026",
+   "chapter": "agents",
+   "kind": "Local assistant you run from Telegram",
+   "line": "A local-first assistant that fills in repetitive Google Forms from what it already knows about you, asks one question at a time for the rest, and never submits without your approval.",
+   "stack": [
+    "Python",
+    "Ollama",
+    "Qwen 3 4B",
+    "Playwright",
+    "SQLite",
+    "Telegram",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "android-ai-agent",
+   "name": "Android AI Agent",
+   "year": "2026",
+   "chapter": "agents",
+   "kind": "Automation agent with a vision model",
+   "line": "Describe what you want done on your phone and an agent does it, built first for blind and visually impaired users.",
+   "stack": [
+    "Python",
+    "ADB",
+    "Groq",
+    "Llama 4 Scout",
+    "Gemini",
+    "WebSocket",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "tasknova",
+   "name": "TaskNova",
+   "year": "2025",
+   "chapter": "agents",
+   "kind": "Telegram bot",
+   "line": "Tell a Telegram bot what you need to do and when, and it works out the reminders for you.",
+   "stack": [
+    "Python",
+    "Flask",
+    "APScheduler",
+    "SQLite",
+    "Telegram Bot API",
+    "Gemini 2.0 Flash",
+    "Render"
+   ],
+   "repo": true
+  },
+  {
+   "id": "latspace-parser",
+   "name": "LatSpace Parser",
+   "year": "2026",
+   "chapter": "agents",
+   "kind": "Web service with human review",
+   "line": "Takes a factory’s messy monthly Excel sheet and maps its columns onto a standard parameter registry, flagging what it isn’t sure about.",
+   "stack": [
+    "FastAPI",
+    "Next.js",
+    "openpyxl",
+    "Groq",
+    "Llama 3.3 70B",
+    "SQLite",
+    "Docker"
+   ],
+   "repo": true
+  },
+  {
+   "id": "nexakernel",
+   "name": "NexaKernel",
+   "year": "2025",
+   "chapter": "machines",
+   "kind": "Operating system kernel",
+   "line": "An x86 operating system kernel written from scratch, with a different data structure behind each core subsystem.",
+   "stack": [
+    "C",
+    "NASM",
+    "x86",
+    "GRUB",
+    "QEMU"
+   ],
+   "repo": true
+  },
+  {
+   "id": "lockai",
+   "name": "LockAI",
+   "year": "2025",
+   "chapter": "machines",
+   "kind": "ESP32 smart lock",
+   "line": "A lock that opens for a pattern of finger touches, with a phone app for remote unlocking.",
+   "stack": [
+    "ESP32",
+    "Arduino C++",
+    "Blynk",
+    "Python",
+    "Edge Impulse",
+    "React"
+   ],
+   "repo": true
+  },
+  {
+   "id": "ecodose",
+   "name": "EcoDose",
+   "year": "2025",
+   "chapter": "machines",
+   "kind": "Sensor firmware, API and web app",
+   "line": "Soil readings in, a recommended dose of Rhizobium biofertiliser out, with a sensor kit for taking the readings.",
+   "stack": [
+    "ESP32",
+    "Flask",
+    "scikit-learn",
+    "React",
+    "Vite",
+    "Gemini"
+   ],
+   "repo": true
+  },
+  {
+   "id": "mindforge",
+   "name": "MindForge",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Web app",
+   "line": "Pitch an idea at a coding event and get a scored evaluation from Gemini almost at once, with a live leaderboard.",
+   "stack": [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "FastAPI",
+    "Gemini 2.5 Flash",
+    "Firebase",
+    "Vercel",
+    "Render"
+   ],
+   "repo": true
+  },
+  {
+   "id": "ignitequest",
+   "name": "IgniteQuest",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Web app for live events",
+   "line": "A quiz-show control surface for live school events: one laptop runs the show, and the finalists answer on their phones.",
+   "stack": [
+    "Next.js",
+    "Prisma",
+    "PostgreSQL",
+    "Supabase"
+   ],
+   "repo": true
+  },
+  {
+   "id": "glideshot",
+   "name": "GlideShot",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Browser game",
+   "line": "A 3D mini-golf game that runs in the browser, with a drag-to-aim system that draws the path for you.",
+   "stack": [
+    "Next.js",
+    "React Three Fiber",
+    "Three.js",
+    "Firebase"
+   ],
+   "repo": true
+  },
+  {
+   "id": "glimpse3d",
+   "name": "Glimpse3D",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Photo-to-3D pipeline",
+   "line": "Turns a single photo into a 3D Gaussian splat model, with the heavy models running on a free Colab GPU.",
+   "stack": [
+    "Python",
+    "PyTorch",
+    "TripoSR",
+    "SyncDreamer",
+    "SDXL Lightning",
+    "gsplat",
+    "MiDaS"
+   ],
+   "repo": true
+  },
+  {
+   "id": "orgnet",
+   "name": "OrgNet",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Team chat and file sharing",
+   "line": "Team chat and file sharing where who can see what follows the org chart.",
+   "stack": [
+    "NestJS",
+    "Prisma",
+    "PostgreSQL",
+    "Socket.IO",
+    "React 19",
+    "Zustand"
+   ],
+   "repo": true
+  },
+  {
+   "id": "neochyrp",
+   "name": "NeoChyrp",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Blogging engine",
+   "line": "A rebuild of the classic Chyrp blogging engine with modular post types, threaded comments and Webmentions.",
+   "stack": [
+    "Next.js 15",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Supabase"
+   ],
+   "repo": true
+  },
+  {
+   "id": "visualab",
+   "name": "VisuaLab",
+   "year": "2025",
+   "chapter": "platforms",
+   "kind": "Early media library",
+   "line": "An early version of a library for images and other media.",
+   "stack": [
+    "Next.js",
+    "Supabase",
+    "Prisma",
+    "Cloudflare R2",
+    "Weaviate",
+    "CLIP"
+   ],
+   "repo": true
+  }
+ ],
+ "chapters": {
+  "companions": "Companions",
+  "care": "Care",
+  "trust": "Law, money and proof",
+  "learning": "Learning",
+  "grid": "Grids and guards",
+  "agents": "Agents and automation",
+  "machines": "Machines",
+  "platforms": "Platforms and play"
+ },
+ "selected": [
+  "nova-ai",
+  "phire",
+  "nexakernel",
+  "nyayasetu"
+ ]
+}
