@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/hero.svg" alt="Varun Aditya, AI engineer and software developer in Bengaluru. An isometric lab bench with a box of blood slides, a microscope, a laptop running code and a lamp. The lights go out and the blood glows blue." width="100%"></a>
+<a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/hero.svg" alt="Varun Aditya, AI Engineer and Software Developer in Bengaluru. An isometric lab bench with a box of blood slides, a microscope, a laptop running code and a lamp. The lights go out and the blood glows blue." width="100%"></a>
 
 <p><a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/tab-portfolio.svg" alt="Open the portfolio" width="250"></a>&nbsp;<a href="https://varun-aditya-portfolio.vercel.app/Varun_Aditya_Resume.pdf"><img src="assets/tab-resume.svg" alt="Open the résumé as a PDF" width="250"></a></p>
 
 </div>
 
-Hi, I'm Varun, an AI engineer and software developer in Bengaluru. I'm studying Information Science and Engineering at RV College of Engineering and I'm Vice President of Coding Club RVCE. This page is the lab behind my [portfolio](https://varun-aditya-portfolio.vercel.app), where the 31 projects are written up as case files.
+Hi, I'm Varun, an AI Engineer and Software Developer in Bengaluru. I'm studying Information Science and Engineering at RV College of Engineering and I'm Vice President of Coding Club RVCE. This page is the lab behind my [portfolio](https://varun-aditya-portfolio.vercel.app), where the 31 projects are written up as case files.
 
 <p align="center"><img src="assets/plate-subject.svg" alt="Section 1. Person of interest" width="100%"></p>
 

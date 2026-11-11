@@ -9,7 +9,7 @@ import { ROOT, OUT, DATA, portrait, C, rng, seedOf, r1, r2, spatter, fonts, face
 /* ------------------------------------------------------------------ hero */
 function hero() {
   const W = 1000, H = 730;
-  const d = new Doc(W, H, 'Varun Aditya, AI engineer and software developer in Bengaluru. A forensic lab bench: a box of blood slides, a microscope, a laptop running code, a lamp. The lights go out and the blood glows.');
+  const d = new Doc(W, H, 'Varun Aditya, AI Engineer and Software Developer in Bengaluru. A forensic lab bench: a box of blood slides, a microscope, a laptop running code, a lamp. The lights go out and the blood glows.');
   paperDefs(d);
   d.css = `
 .night{animation:lights 40s linear infinite}
@@ -56,7 +56,7 @@ ${kit.ISO_CSS}${labCss()}`;
     [[0.06, 52, 0.4, 6.2], [0.2, 86, 2.2, 5.4], [0.34, 44, 1.1, 6.8], [0.47, 70, 3.4, 5.9], [0.61, 38, 0.2, 6.5], [0.78, 64, 4.1, 6], [0.9, 46, 1.9, 7]]
       .forEach(([fr, h, dl, du]) => g.push(dripEl(46 + fr * nameW, baseY + 4, h, dl, du, night ? C.luminol : C.blood, 7)));
     const x0 = 52;
-    g.push(d.text(BODY(760), 'AI engineer and software developer', x0, 268, 21, { fill: red }));
+    g.push(d.text(BODY(760), 'AI Engineer and Software Developer', x0, 268, 21, { fill: red }));
     d.wrap(BODY(430), 'I build software for health, law and power grids, and the odd operating system.', 31, 330).forEach((ln, i) => g.push(d.text(BODY(430), ln, x0, 318 + i * 38, 31, { fill: ink })));
     d.wrap(BODY(420), 'Information Science at RV College of Engineering, Bengaluru. Graduating in 2028.', 18, 320).forEach((ln, i) => g.push(d.text(BODY(420), ln, x0, 500 + i * 26, 18, { fill: sub })));
     return g.join('');

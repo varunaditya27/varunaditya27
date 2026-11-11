@@ -9,7 +9,7 @@ const page = (id) => `${SITE}/projects/${id}`;
 const byId = (id) => DATA.projects.find((p) => p.id === id);
 
 const alt = {
-  hero: 'Varun Aditya, AI engineer and software developer in Bengaluru. An isometric lab bench with a box of blood slides, a microscope, a laptop running code and a lamp. The lights go out and the blood glows blue.',
+  hero: 'Varun Aditya, AI Engineer and Software Developer in Bengaluru. An isometric lab bench with a box of blood slides, a microscope, a laptop running code and a lamp. The lights go out and the blood glows blue.',
   divider: 'Crime scene tape',
 };
 const img = (file, text, width = '100%') => `<img src="assets/${file}.svg" alt="${text}" width="${width}">`;
@@ -30,7 +30,7 @@ const md = `<div align="center">
 
 </div>
 
-Hi, I'm Varun, an AI engineer and software developer in Bengaluru. I'm studying Information Science and Engineering at RV College of Engineering and I'm Vice President of Coding Club RVCE. This page is the lab behind my [portfolio](${SITE}), where the ${DATA.projects.length} projects are written up as case files.
+Hi, I'm Varun, an AI Engineer and Software Developer in Bengaluru. I'm studying Information Science and Engineering at RV College of Engineering and I'm Vice President of Coding Club RVCE. This page is the lab behind my [portfolio](${SITE}), where the ${DATA.projects.length} projects are written up as case files.
 
 ${plate('plate-subject', 'Section 1. Person of interest')}
 
