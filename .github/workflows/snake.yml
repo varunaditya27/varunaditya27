@@ -1,35 +1,28 @@
-# Place this file at: .github/workflows/snake.yml
-# in your varunaditya27/varunaditya27 profile repo
-
-name: Generate Contribution Snake
+name: Contribution snake
 
 on:
   schedule:
-    # Runs every day at midnight UTC
     - cron: "0 0 * * *"
-  workflow_dispatch:  # Allows manual trigger from the Actions tab
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     permissions:
       contents: write
-
     steps:
-      - name: Generate Snake SVG
+      - name: Generate the snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
+            dist/snake-dark.svg?color_snake=#ff3b57&color_dots=#2a0f14,#5a0c18,#8f0f22,#cf1030,#ff3b57
+            dist/snake.svg?color_snake=#b3001b&color_dots=#e6dcc4,#e3b5a8,#d27a85,#b3001b,#7a0b16
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push to Output Branch
+      - name: Push to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
