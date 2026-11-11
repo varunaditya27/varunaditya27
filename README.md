@@ -69,10 +69,6 @@ Hi, I'm Varun, an AI engineer and software developer in Bengaluru. I'm studying 
 
 <p align="center"><img src="assets/plate-contact.svg" alt="Section 7. Leave a message." width="100%"></p>
 
-<p align="center">
-<a href="mailto:varunaditya2706@gmail.com">varunaditya2706@gmail.com</a> &nbsp;|&nbsp;
-<a href="https://www.linkedin.com/in/varunaditya27">linkedin.com/in/varunaditya27</a> &nbsp;|&nbsp;
-<a href="https://varun-aditya-portfolio.vercel.app">varun-aditya-portfolio.vercel.app</a>
-</p>
+<p align="center"><a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/tag-portfolio.svg" alt="Exhibit A: Portfolio, varun-aditya-portfolio.vercel.app. Opens the portfolio." width="25%"></a><a href="https://varun-aditya-portfolio.vercel.app/Varun_Aditya_Resume.pdf"><img src="assets/tag-resume.svg" alt="Exhibit B: Résumé, as a PDF. Opens the résumé." width="25%"></a><a href="https://www.linkedin.com/in/varunaditya27"><img src="assets/tag-linkedin.svg" alt="Exhibit C: LinkedIn, linkedin.com/in/varunaditya27. Opens my LinkedIn profile." width="25%"></a><a href="mailto:varunaditya2706@gmail.com"><img src="assets/tag-email.svg" alt="Exhibit D: Email, varunaditya2706@gmail.com. Starts an email to me." width="25%"></a></p>
 
 <p align="center"><img src="assets/footer.svg" alt="That is the file. Varun Aditya, Bengaluru." width="100%"></p>

@@ -86,11 +86,7 @@ ${plate('plate-activity', 'Section 6. The hunt: a year of contributions as a cri
 
 ${plate('plate-contact', 'Section 7. Leave a message.')}
 
-<p align="center">
-<a href="mailto:varunaditya2706@gmail.com">varunaditya2706@gmail.com</a> &nbsp;|&nbsp;
-<a href="https://www.linkedin.com/in/varunaditya27">linkedin.com/in/varunaditya27</a> &nbsp;|&nbsp;
-<a href="${SITE}">${SITE.replace('https://', '')}</a>
-</p>
+<p align="center"><a href="${SITE}"><img src="assets/tag-portfolio.svg" alt="Exhibit A: Portfolio, ${SITE.replace('https://', '')}. Opens the portfolio." width="25%"></a><a href="${SITE}/Varun_Aditya_Resume.pdf"><img src="assets/tag-resume.svg" alt="Exhibit B: R\u00E9sum\u00E9, as a PDF. Opens the r\u00E9sum\u00E9." width="25%"></a><a href="https://www.linkedin.com/in/varunaditya27"><img src="assets/tag-linkedin.svg" alt="Exhibit C: LinkedIn, linkedin.com/in/varunaditya27. Opens my LinkedIn profile." width="25%"></a><a href="mailto:varunaditya2706@gmail.com"><img src="assets/tag-email.svg" alt="Exhibit D: Email, varunaditya2706@gmail.com. Starts an email to me." width="25%"></a></p>
 
 <p align="center">${img('footer', 'That is the file. Varun Aditya, Bengaluru.')}</p>
 `;

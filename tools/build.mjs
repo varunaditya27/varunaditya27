@@ -271,6 +271,42 @@ function footer() {
   d.write('footer.svg');
 }
 
+
+/* ------------------------------------------------------------------ contact: four evidence tags on one rail */
+const TAGS = [
+  ['A', 'PORTFOLIO', 'varun-aditya-portfolio\n.vercel.app', 'Opens the portfolio, with every case file written up.', 'mark-va'],
+  ['B', 'R\u00C9SUM\u00C9', 'One PDF, kept up to date', 'Opens the r\u00E9sum\u00E9 as a PDF.', 'mark-page'],
+  ['C', 'LINKEDIN', 'linkedin.com/in/\nvarunaditya27', 'Opens my LinkedIn profile.', 'mark-in'],
+  ['D', 'EMAIL', 'varunaditya2706\n@gmail.com', 'Starts an email to me.', 'mark-mail'],
+];
+function tag(i) {
+  const [letter, label, line, alt, mark] = TAGS[i];
+  const W = 250, H = 340;
+  const d = new Doc(W, H, `Exhibit ${letter}: ${label.charAt(0) + label.slice(1).toLowerCase()}. ${line.replace(/\n/g, '')}. ${alt}`);
+  paperDefs(d);
+  d.css = `.sw{transform-box:view-box;transform-origin:125px 22px;animation:sw 5.2s ease-in-out infinite;animation-delay:${-i * 1.1}s}@keyframes sw{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+.st{transform-box:fill-box;transform-origin:center;animation:thump 7s ease-out infinite;animation-delay:${i * 0.5}s}@keyframes thump{0%,84%{transform:scale(1)}88%{transform:scale(1.16)}100%{transform:scale(1)}}${still('.sw,.st')}`;
+  d.add(`<rect width="${W}" height="${H}" fill="${C.cabinet}"/>`);
+  d.add(`<rect x="0" y="16" width="${W}" height="7" fill="${C.bone3}" opacity=".85"/><circle cx="125" cy="19.5" r="7" fill="${C.bone3}"/>`);
+  let body = `<path d="M125 24 V66" stroke="${C.bone3}" stroke-width="2.2" fill="none"/>`;
+  body += `<g filter="url(#torn)"><path d="M52 74 H198 L222 98 V318 H28 V98 Z" fill="${C.manila}"/></g><circle cx="125" cy="90" r="7.5" fill="${C.cabinet}"/><circle cx="125" cy="90" r="9.6" fill="none" stroke="${C.ink}" stroke-opacity=".3" stroke-width="1.5"/>`;
+  body += `<g transform="translate(28 98)">${grain(194, 220)}</g>`;
+  body += `<g class="st" filter="url(#ink)"><rect x="63" y="116" width="124" height="30" rx="4" fill="none" stroke="${C.deep}" stroke-width="2.6"/>${d.text(BODY(800), `Exhibit ${letter}`, 125, 138, 19, { fill: C.deep, anchor: 'middle', track: 0.5 })}</g>`;
+  let size = 38;
+  while (d.measure(TITLE(1996), label, size) > 176 && size > 18) size -= 2;
+  body += d.text(TITLE(1996), label, 125, 188 + (38 - size) * 0.2, size, { fill: C.ink, anchor: 'middle' });
+  /* a mark for each: drawn, because not every logo is available */
+  const cx = 125, cy = 232;
+  if (mark === 'mark-va') body += `<circle cx="${cx}" cy="${cy}" r="26" fill="none" stroke="${C.ink}" stroke-width="3"/>${d.text(TITLE(1990), 'VA', cx, cy + 10, 26, { fill: C.ink, anchor: 'middle' })}`;
+  if (mark === 'mark-page') body += `<path d="M${cx - 20} ${cy - 28} h28 l14 14 v42 h-42 z" fill="${C.paper}" stroke="${C.ink}" stroke-width="3" stroke-linejoin="round"/><path d="M${cx + 8} ${cy - 28} v14 h14" fill="none" stroke="${C.ink}" stroke-width="3" stroke-linejoin="round"/>${[-4, 6, 16].map((o) => `<path d="M${cx - 12} ${cy + o} h24" stroke="${C.ink}" stroke-width="3" stroke-linecap="round"/>`).join('')}`;
+  if (mark === 'mark-in') body += `<rect x="${cx - 26}" y="${cy - 26}" width="52" height="52" rx="9" fill="${C.ink}"/>${d.text(BODY(800), 'in', cx, cy + 12, 36, { fill: C.manila, anchor: 'middle' })}`;
+  if (mark === 'mark-mail') body += `<path transform="translate(${cx - 29} ${cy - 29}) scale(2.42)" d="${icons.siGmail.path}" fill="${C.ink}"/>`;
+  const lines = line.split('\n');
+  lines.forEach((ln, j) => { body += d.text(BODY(520), ln, 125, 290 + j * 18 - (lines.length - 1) * 9, 14.5, { fill: C.ink2, anchor: 'middle' }); });
+  d.add(`<g class="sw">${body}</g>`);
+  d.write(`tag-${['portfolio', 'resume', 'linkedin', 'email'][i]}.svg`);
+}
+
 hero();
 divider();
 plate('plate-subject.svg', '01', 'PERSON OF INTEREST', 311);
@@ -281,6 +317,7 @@ plate('plate-tools.svg', '05', 'THE KIT', 647);
 plate('plate-activity.svg', '06', 'THE HUNT', 759);
 plate('plate-contact.svg', '07', 'LEAVE A MESSAGE', 863);
 subject();
+[0, 1, 2, 3].forEach(tag);
 DATA.selected.forEach((id, i) => card(DATA.projects.find((p) => p.id === id), i));
 stack();
 record();
