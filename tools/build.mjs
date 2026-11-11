@@ -214,7 +214,7 @@ function plate(file, num, label, sub, seed) {
   d.add(`<g transform="translate(22 22)">${grain(W - 44, 104)}</g>`);
   d.add(`<g opacity=".8" filter="url(#ink)">${spatter(W - 80, 34, seed, { n: 34, reach: 190, angle: Math.PI * 0.9, cone: 1.2, big: 7, fill: C.arterial })}</g>`);
   let size = 66;
-  while (d.measure(TITLE(1996), label, size) > 700 && size > 30) size -= 2;
+  while (d.measure(TITLE(1996), label, size) > 600 && size > 30) size -= 2;
   d.add(d.text(TITLE(1996), label, 112, 88, size, { fill: C.ink }));
   d.add(d.text(BODY(520), sub, 114, 114, 17, { fill: C.ink2 }));
   d.add(`<g class="st" filter="url(#ink)"><circle cx="64" cy="74" r="28" fill="none" stroke="${C.deep}" stroke-width="3.6"/>${d.text(BODY(800), num, 64, 85, 30, { fill: C.deep, anchor: 'middle' })}</g>`);
@@ -381,10 +381,11 @@ function footer() {
   d.css = `${dripCss}.pool{animation:slosh 7s ease-in-out infinite}@keyframes slosh{0%,100%{transform:translateX(0)}50%{transform:translateX(-100px)}}${still('.dr,.pool')}`;
   d.defs.push(`<clipPath id="c"><rect width="${W}" height="${H}" rx="14"/></clipPath>`);
   d.add(`<g clip-path="url(#c)"><rect width="${W}" height="${H}" fill="${C.void}"/>`);
-  [[110, 70, 0], [290, 110, 1.4], [480, 54, 2.6], [700, 96, .8], [880, 80, 3.4]].forEach(([x, h, dl]) => d.add(dripEl(x, 0, h, dl, 5.5, C.blood, 8)));
+  [[70, 58, 0], [150, 40, 1.8], [850, 62, 0.8], [930, 44, 2.6]].forEach(([x, h, dl]) => d.add(dripEl(x, 0, h, dl, 5.5, C.blood, 8)));
   d.add(d.text(TITLE(2030), 'THAT IS THE FILE', 500, 126, 46, { fill: C.bone, anchor: 'middle' }));
   d.add(d.text(BODY(440), 'Varun Aditya, Bengaluru. Write to me.', 500, 160, 19, { fill: C.bone2, anchor: 'middle' }));
-  d.add(`<g class="pool"><path d="M-100 196 q 50 -22 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 V230 H-100Z" fill="${C.arterial}"/></g><g class="pool" style="animation-direction:reverse;animation-duration:5s"><path d="M-100 208 q 40 -16 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 V230 H-100Z" fill="${C.blood}"/></g></g>`);
+  const wave = (y, step, rise, n) => `M-100 ${y} q ${step / 2} ${-rise} ${step} 0${` t ${step} 0`.repeat(n - 1)} V230 H-100Z`;
+  d.add(`<g class="pool"><path d="${wave(196, 100, 22, 13)}" fill="${C.arterial}"/></g><g class="pool" style="animation-direction:reverse;animation-duration:5s"><path d="${wave(208, 80, 16, 16)}" fill="${C.blood}"/></g></g>`);
   d.write('footer.svg');
 }
 
