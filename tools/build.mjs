@@ -203,9 +203,9 @@ function divider() {
 }
 
 /* ------------------------------------------------------------------ section plates: torn paper labels */
-function plate(file, num, label, sub, seed) {
+function plate(file, num, label, seed) {
   const W = 1000, H = 160;
-  const d = new Doc(W, H, `${label}. ${sub}`);
+  const d = new Doc(W, H, label);
   paperDefs(d);
   d.css = `${dripCss}.st{transform-box:fill-box;transform-origin:center;animation:thump 6s ease-out infinite}@keyframes thump{0%,86%{transform:scale(1)}90%{transform:scale(1.14)}100%{transform:scale(1)}}${still('.dr,.st')}`;
   d.defs.push(`<clipPath id="c"><rect width="${W}" height="${H}" rx="10"/></clipPath>`);
@@ -215,8 +215,7 @@ function plate(file, num, label, sub, seed) {
   d.add(`<g opacity=".8" filter="url(#ink)">${spatter(W - 80, 34, seed, { n: 34, reach: 190, angle: Math.PI * 0.9, cone: 1.2, big: 7, fill: C.arterial })}</g>`);
   let size = 66;
   while (d.measure(TITLE(1996), label, size) > 600 && size > 30) size -= 2;
-  d.add(d.text(TITLE(1996), label, 112, 88, size, { fill: C.ink }));
-  d.add(d.text(BODY(520), sub, 114, 114, 17, { fill: C.ink2 }));
+  d.add(d.text(TITLE(1996), label, 112, 74 + size * 0.36, size, { fill: C.ink }));
   d.add(`<g class="st" filter="url(#ink)"><circle cx="64" cy="74" r="28" fill="none" stroke="${C.deep}" stroke-width="3.6"/>${d.text(BODY(800), num, 64, 85, 30, { fill: C.deep, anchor: 'middle' })}</g>`);
   const tx = 112 + d.measure(TITLE(1996), label, size) * 0.88;
   d.add(dripEl(Math.min(tx, 880), 124, 24, 0.4, 5.2, C.blood, 6));
@@ -391,12 +390,12 @@ function footer() {
 
 hero();
 divider();
-plate('plate-subject.svg', '01', 'PERSON OF INTEREST', 'Who is asking, and what is on the table right now', 311);
-plate('plate-cases.svg', '02', 'OPEN CASES', `${DATA.projects.length} projects. Four are on the board.`, 421);
-plate('plate-record.svg', '03', 'THE PRIORS', 'Results and roles, in date order', 533);
-plate('plate-tools.svg', '04', 'THE KIT', 'What the projects are built with', 647);
-plate('plate-activity.svg', '05', 'THE HUNT', 'A year of commits, eaten by a snake', 759);
-plate('plate-contact.svg', '06', 'LEAVE A MESSAGE', 'One note is enough', 863);
+plate('plate-subject.svg', '01', 'PERSON OF INTEREST', 311);
+plate('plate-cases.svg', '02', 'OPEN CASES', 421);
+plate('plate-record.svg', '03', 'THE PRIORS', 533);
+plate('plate-tools.svg', '04', 'THE KIT', 647);
+plate('plate-activity.svg', '05', 'THE HUNT', 759);
+plate('plate-contact.svg', '06', 'LEAVE A MESSAGE', 863);
 subject();
 DATA.selected.forEach((id, i) => card(DATA.projects.find((p) => p.id === id), i));
 stack();
