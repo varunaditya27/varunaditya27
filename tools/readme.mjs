@@ -26,12 +26,7 @@ const md = `<div align="center">
 
 <a href="${SITE}">${img('hero', alt.hero)}</a>
 
-<p>
-<a href="${SITE}"><b>Portfolio</b></a> &nbsp;|&nbsp;
-<a href="${SITE}/Varun_Aditya_Resume.pdf">Résumé</a> &nbsp;|&nbsp;
-<a href="https://www.linkedin.com/in/varunaditya27">LinkedIn</a> &nbsp;|&nbsp;
-<a href="mailto:varunaditya2706@gmail.com">Email</a>
-</p>
+<p><a href="${SITE}"><img src="assets/tab-portfolio.svg" alt="Open the portfolio" width="250"></a>&nbsp;<a href="${SITE}/Varun_Aditya_Resume.pdf"><img src="assets/tab-resume.svg" alt="Open the r\u00E9sum\u00E9 as a PDF" width="250"></a></p>
 
 </div>
 

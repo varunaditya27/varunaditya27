@@ -307,6 +307,22 @@ function tag(i) {
   d.write(`tag-${['portfolio', 'resume', 'linkedin', 'email'][i]}.svg`);
 }
 
+/* ------------------------------------------------------------------ the two folder tabs under the hero */
+function tab(file, label, alt) {
+  const W = 250, H = 76;
+  const d = new Doc(W, H, alt);
+  paperDefs(d);
+  d.css = `.ar{animation:nudge 2.6s ease-in-out infinite}@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}${dripCss}${still('.ar,.dr')}`;
+  d.add(`<g filter="url(#torn)"><path d="M10 70 V28 Q10 12 26 12 H224 Q240 12 240 28 V70 Z" fill="${C.manila}"/></g>`);
+  d.add(`<g transform="translate(10 12)"><clipPath id="tc"><path d="M0 58 V16 Q0 0 16 0 H214 Q230 0 230 16 V58 Z"/></clipPath><g clip-path="url(#tc)">${grain(230, 58)}</g></g>`);
+  d.add(`<path d="M10 70 H240" stroke="${C.deep}" stroke-width="4"/>`);
+  let size = 27;
+  while (d.measure(TITLE(1996), label, size) > 150 && size > 16) size -= 1;
+  d.add(d.text(TITLE(1996), label, 28, 52, size, { fill: C.ink }));
+  d.add(`<g class="ar"><path d="M${34 + d.measure(TITLE(1996), label, size) + 12} 42 h26 m-8 -9 l8 9 l-8 9" fill="none" stroke="${C.deep}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  d.write(file);
+}
+
 hero();
 divider();
 plate('plate-subject.svg', '01', 'PERSON OF INTEREST', 311);
@@ -317,6 +333,8 @@ plate('plate-tools.svg', '05', 'THE KIT', 647);
 plate('plate-activity.svg', '06', 'THE HUNT', 759);
 plate('plate-contact.svg', '07', 'LEAVE A MESSAGE', 863);
 subject();
+tab('tab-portfolio.svg', 'PORTFOLIO', 'Open the portfolio');
+tab('tab-resume.svg', 'R\u00C9SUM\u00C9', 'Open the r\u00E9sum\u00E9 as a PDF');
 [0, 1, 2, 3].forEach(tag);
 DATA.selected.forEach((id, i) => card(DATA.projects.find((p) => p.id === id), i));
 stack();

@@ -2,12 +2,7 @@
 
 <a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/hero.svg" alt="Varun Aditya, AI engineer and software developer in Bengaluru. An isometric lab bench with a box of blood slides, a microscope, a laptop running code and a lamp. The lights go out and the blood glows blue." width="100%"></a>
 
-<p>
-<a href="https://varun-aditya-portfolio.vercel.app"><b>Portfolio</b></a> &nbsp;|&nbsp;
-<a href="https://varun-aditya-portfolio.vercel.app/Varun_Aditya_Resume.pdf">Résumé</a> &nbsp;|&nbsp;
-<a href="https://www.linkedin.com/in/varunaditya27">LinkedIn</a> &nbsp;|&nbsp;
-<a href="mailto:varunaditya2706@gmail.com">Email</a>
-</p>
+<p><a href="https://varun-aditya-portfolio.vercel.app"><img src="assets/tab-portfolio.svg" alt="Open the portfolio" width="250"></a>&nbsp;<a href="https://varun-aditya-portfolio.vercel.app/Varun_Aditya_Resume.pdf"><img src="assets/tab-resume.svg" alt="Open the résumé as a PDF" width="250"></a></p>
 
 </div>
 
