@@ -83,8 +83,8 @@ function hunt() {
   const d = new Doc(W, H, `The hunt. A year of contributions as a crime scene: ${calendar.totalContributions} in all. The five biggest days: ${top.map((t, i) => `${i + 1}, ${long(t.date)}, ${t.contributionCount}`).join('; ')}.`);
   paperDefs(d);
   const T = 16, SWEEP = 11;
-  d.css = `.glow{animation:glow ${T}s infinite}@keyframes glow{0%{fill:#7a0b16;transform:scale(1)}1.5%{fill:${C.luminol};transform:scale(1.45)}7%,9%{fill:${C.luminol};transform:scale(1.2)}16%,100%{fill:#7a0b16;transform:scale(1)}}.glow{transform-box:fill-box;transform-origin:center}
-.beam{animation:beam ${T}s infinite}@keyframes beam{0%{transform:translateX(0);opacity:0}2%{opacity:1}${(SWEEP / T) * 100}%{transform:translateX(${calendar.weeks.length * PITCH}px);opacity:1}${(SWEEP / T) * 100 + 3}%,100%{transform:translateX(${calendar.weeks.length * PITCH}px);opacity:0}}
+  d.css = `.glow{animation:glow ${T}s infinite}@keyframes glow{0%{fill:#7a0b16;transform:scale(1)}1.5%{fill:${C.luminol};transform:scale(1.45)}4%{fill:${C.luminol};transform:scale(1.25)}9%,100%{fill:#7a0b16;transform:scale(1)}}.glow{transform-box:fill-box;transform-origin:center}
+.beam{animation:beam ${T}s linear infinite}@keyframes beam{0%{transform:translateX(0);opacity:0}2%{opacity:1}${(SWEEP / T) * 100}%{transform:translateX(${calendar.weeks.length * PITCH}px);opacity:1}${(SWEEP / T) * 100 + 3}%,100%{transform:translateX(${calendar.weeks.length * PITCH}px);opacity:0}}
 .mk{animation:mk ${T}s infinite}@keyframes mk{0%,2%{opacity:.35}5%,60%{opacity:1}90%,100%{opacity:.35}}${dripCss}${still('.glow,.beam,.mk,.dr')}@media (prefers-reduced-motion: reduce){.beam{opacity:0}}`;
   d.defs.push(`<clipPath id="c"><rect width="${W}" height="${H}" rx="14"/></clipPath>
 <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f6bff" stop-opacity=".5"/><stop offset="1" stop-color="#6b3dff" stop-opacity="0"/></linearGradient>`);
@@ -97,13 +97,15 @@ function hunt() {
     if (m !== lastMonth && wi < calendar.weeks.length - 2) { d.add(d.text(BODY(520), MONTHS[m], LEFT + wi * PITCH - 6, GY - 22, 12, { fill: C.bone3 })); lastMonth = m; }
   });
   /* the scene: every day is a spot, sized by how much happened */
+  /* the second at which the lamp is directly above a week's column (the lamp starts 6px left of the first column) */
+  const arrive = (wi) => ((wi * PITCH + 6) / (calendar.weeks.length * PITCH)) * SWEEP;
   const rand = rng(41);
   const spots = days.map((day) => {
     const lv = level(day.contributionCount);
     const x = LEFT + day.wi * PITCH, y = GY + day.weekday * PITCH;
     if (!lv) return `<circle cx="${r1(x)}" cy="${r1(y)}" r="1.3" fill="#2a1a1c"/>`;
     const rr = 2.2 + lv * 1.5 + rand() * 0.5;
-    const delay = ((day.wi / calendar.weeks.length) * SWEEP).toFixed(2);
+    const delay = (arrive(day.wi) - 0.24).toFixed(2);
     return `<circle class="glow" cx="${r1(x)}" cy="${r1(y)}" r="${r1(rr)}" fill="#7a0b16" style="animation-delay:${delay}s"/>`;
   });
   d.add(spots.join(''));
@@ -112,7 +114,7 @@ function hunt() {
   /* evidence markers on the five biggest days */
   top.forEach((t, i) => {
     const x = LEFT + t.wi * PITCH, y = GY + t.weekday * PITCH;
-    d.add(`<g class="mk" style="animation-delay:${((t.wi / calendar.weeks.length) * SWEEP).toFixed(2)}s"><path d="M${r1(x - 9)} ${r1(y - 8)} h18 l-3 -16 h-12 z" fill="${C.sun}" stroke="${C.ink}" stroke-width="1.2"/>${d.text(BODY(800), String(i + 1), x, y - 11, 11, { fill: C.ink, anchor: 'middle' })}</g>`);
+    d.add(`<g class="mk" style="animation-delay:${(arrive(t.wi) - 0.3).toFixed(2)}s"><path d="M${r1(x - 9)} ${r1(y - 8)} h18 l-3 -16 h-12 z" fill="${C.sun}" stroke="${C.ink}" stroke-width="1.2"/>${d.text(BODY(800), String(i + 1), x, y - 11, 11, { fill: C.ink, anchor: 'middle' })}</g>`);
   });
   /* the marker list: real days, real counts */
   top.forEach((t, i) => {
